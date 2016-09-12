@@ -5,8 +5,90 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
-</html>
+  <div class="wrapper">
+    <header class="main-hefder">
+      <div class="logo">
+        <a href="/"><img src="http://placehold.it/76x22" class="logo-img" alt="Наш логотип"></a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__btn" type="button">Меню</button>
+        <ul class="main-nav__list">
+          <li><a href="#" class="main-nav_item--activ" >Главная</a></li>
+          <li><a href="#" class="main-nav_item">Фотографии</a></li>
+          <li><a href="#" class="main-nav_item">Конкурс</a></li>
+          <li><a href="#" class="main-nav_item">HMTL Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <sechion class="download-img"> </sechion>
+      <sechion class="download-app">
+        <div class="download-app__wrapper">
+          <button class="btn" type="button">Скачать приложение</button>
+          <div class="download-app__icon">
+            <div class=".download-app__item download-app--apple">
+              <a href="#"><img src="http://placehold.it/43x47" alt="apple"></a>
+            </div>
+            <div class=".download-app__item download-app--android">
+              <a href="#"><img src="http://placehold.it/43x47" alt="android"></a>
+            </div>
+            <div class=".download-app__item download-app--microsoft">
+              <a href="#"><img src="http://placehold.it/43x47" alt="microsoft"></a>
+            </div>
+          </div>
+        </div>
+      </sechion>
+      <section class="slogans">
+        <b>Устали от мегаполиса?<br>Нам есть, что вам предложить!</b>
+        <h2 class="slogans__title">Поднимает настроение</h2>
+        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <h2 class="slogans__title">Меняет мир вокруг</h2>
+        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <h2 class="slogans__title">Заводит новых друзей</h2>
+        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      </section>
+      <sechion class="slider">
+        <img src="http://placehold.it/157x320" class="slider-img" alt="Салют!!!">
+        <ul class="slider__label-list">
+          <li class="slider__label-item--activ"></li>
+          <li class="slider__label-item"></li>
+          <li class="slider__label-item"></li>
+        </ul>
+         <h2 class="slider__title">Николай Петров</h2>
+         <p class="slider__txt">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </sechion>
+      <sechion class="slider">
+        <table class="slider__price">
+          <caption class="slider__price--title">Стандарт<br>3,99 USD</caption>
+          <tr>
+            <td class="slider__price--name">Розовый фильтр</td>
+            <td class="slider__price--value"><img src="http://placehold.it/31x21" class="slider__price--icon-yes"></td>
+          </tr>
+          <tr>
+            <td class="slider__price--name">Смайлики</td>
+            <td class="slider__price--value"><img src="http://placehold.it/31x21" class="slider__price--icon-yes"></td>
+          </tr>
+          <tr>
+            <td class="slider__price--name">Комментарии</td>
+            <td class="slider__price--value"><img src="http://placehold.it/31x21" class="slider__price--icon-no"></td>
+          </tr>
+        </table>
+        <ul class="slider__label">
+          <li class="slider__label-item"></li>
+          <li class="slider__label-item--activ"></li>
+          <li class="slider__label-item"></li>
+        </ul>
+      </sechion>
+    </main>
+    <footer class="main-footer">
+      <p>Остались вопросы?<br>Свяжитесь с нами!</p>
+      <div class="contacts">
+        <div class="contacts__phone">Звоните <span>7 (812) 555-66-66</span></div>
+        <div class="contacts__email">Пишите <span>mail@htmlacademy.ru</span></div>
+        <div class="contacts__address">Приезжайте в гости <span>ул. Большая Конюшенная, 19/8</span></div>
+      </div>
+        <div class="map">
+          <img src="http://placehold.it/150x100" alt="Карта">
+        </div>
+    </footer>
+  </div>
