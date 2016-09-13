@@ -1,94 +1,143 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
   <div class="wrapper">
     <header class="main-hefder">
       <div class="logo">
-        <a href="/"><img src="http://placehold.it/76x22" class="logo-img" alt="Наш логотип"></a>
+        <a href="/">
+          <img src="http://placehold.it/76x22" class="logo-img" alt="Наш логотип"></a>
       </div>
       <nav class="main-nav">
         <button class="main-nav__btn" type="button">Меню</button>
         <ul class="main-nav__list">
-          <li><a href="#" class="main-nav_item--activ" >Главная</a></li>
-          <li><a href="#" class="main-nav_item">Фотографии</a></li>
-          <li><a href="#" class="main-nav_item">Конкурс</a></li>
-          <li><a href="#" class="main-nav_item">HMTL Academy</a></li>
+          <li>
+            <a href="#" class="main-nav_item--activ" >Главная</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav_item">Фотографии</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav_item">Конкурс</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav_item">HMTL Academy</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <sechion class="competition">
-        <p class="competition-txt">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        <form action="/" class="competition__form">
-
-          <fieldset class="inform-user">
-            <label for="surname-info">Фамилия</label>
-            <input id="ssurname-info" type="text" placeholder="Укажите фамилию">
-            <label for="name-info">Имя</label>
-            <input id="name-info" type="text" placeholder="Введите ваше имя">
-            <label for="patronymic-info">Отчество</label>
-            <input id="patronymic-info type="text" placeholder="Ну и отчество тоже">
+      <div class="competition-title">
+        <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
+      </div>
+      <form action="/" class="form">
+        <div class="form-title">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!  Пожалуйста, заполните форму ниже:
+        </div>
+        <div class="form__wrapper">
+          <div class="form__group">
+            <label class="form__user-title" for="surname-info">Фамилия</label>
+            <input class="form__input-txt" type="text" id="surname-info"  name="surname-info" placeholder="Укажите фамилию"></div>
+          <div class="form__group">
+            <label class="form__user-title" for="name-info">Имя</label>
+            <input class="form__input-txt" type="text" id="name-info" name="name-info" placeholder="Введите ваше имя"></div>
+          <div class="form__group">
+            <label class="form__user-title" for="patronymic-info">Отчество</label>
+            <input class="form__input-txt" type="text" id="patronymic-info" name="patronymic-info" placeholder="Ну и отчество тоже"></div>
+        </div>
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset-title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form__feat">
+              <li>
+                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="selfie"  name="selfie" checked>
+                <label class="form__feat-title" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li>
+                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="burn"  name="burn" checked>
+                <label class="form__feat-title" for="burn">Обгорел на пляже</label>
+              </li>
+              <li>
+                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="see-chak" name="see-chak" >
+                <label class="form__feat-title" for="see-chak">Видел Чака Норриса</label>
+              </li>
+              <li>
+                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="buy-souvenirs" name="buy-souvenirs">
+                <label class="form__feat-title" for="buy-souvenirs">Накупил сувениров</label>
+              </li>
+              <li>
+                <input class="form__input form__input--checkbox" class="form__feat-title" class="form__input form__input--checkbox" type="checkbox" name="kept-piza" id="kept-piza" checked>
+                <label class="form__feat-title" for="kept-piza">Удержал башню</label>
+              </li>
+              <li>
+                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="defeat-hotel" name="defeat-hotel">
+                <label class="form__feat-title" for="defeat-hotel">Разгромил отель</label>
+              </li>
+            </ul>
           </fieldset>
-
-          <fieldset class="success-user">
-            <legend>Ваши безбашенные достижения в путешествии</legend>
-            <label for="selfie">Сделал селфи с акулой</label>
-            <input id="selfie" type="checkbox" checked>
-            <label for="burn">Обгорел на пляже</label>
-            <input id="burn" type="checkbox" checked>
-            <label for="see-chak">Видел Чака Норриса</label>
-            <input id="see-chak" type="checkbox">
-            <label for="buy-souvenirs">Накупил сувениров</label>
-            <input id="buy-souvenirs" type="checkbox">
-            <label for="kept-piza">Удержал башню</label>
-            <input id="kept-piza" type="checkbox" checked>
-            <label for="defeat-hotel">Разгромил отель</label>
-            <input id="defeat-hotel" type="checkbox">
+        </div>
+        <div class="form__wrapper">
+          <div class="form__group">
+            <label class="form__user-title" for="phone-info">Номерок телефона</label>
+            <input class="form__input-txt" type="tel" id="phone-info" name="phone-info" placeholder="Номер, пожалуйста"></div>
+          <div class="form__group">
+            <label class="form__user-title" for="email-info">Адрес почты</label>
+            <input class="form__input-txt" type="email"  id="email-info" name="email-info" placeholder="Введите почту"></div>
+        </div>
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset-title">С каким приложением путешествовали?</legend>
+            <ul class="form__feat">
+              <li>
+                <input class="form__input form__input--radio" name="platform-ios" type="radio" id="platform-ios" value="ios" checked>
+                <label class="form__feat-title" for="platform-ios">Pink для iOS</label>
+              </li>
+              <li>
+                <input class="form__input form__input--radio" name="platform-android" type="radio" id="platform-android" value="android">
+                <label class="form__feat-title" for="platform-android">Pink для Android</label>
+              </li>
+              <li>
+                <input class="form__input form__input--radio" name="platform-winphone" type="radio" id="platform-winphone" value="winphone">
+                <label class="form__feat-title" for="platform-winphone">Windows Phone</label>
+              </li>
+            </ul>
           </fieldset>
-
-          <fieldset class="about-user">
-            <label for="phone-info">Номерок телефона</label>
-            <input id="phone-info" type="tel" placeholder="Номер, пожалуйста">
-            <label for="email-info">Адрес почты</label>
-            <input id="email-info" type="email" placeholder="Введите почту">
+        </div>
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset">
+            <legend class="form__fieldset-title">Ваши безбашенные достижения в путешествии</legend>
+            <textarea class="form__textarea" name="comment" id="comment" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
-
-          <fieldset class="user-app">
-            <legend>С каким приложением путешествовали?</legend>
-            <input name="platform" type="radio" id="platform-ios" value="ios" checked><label for="platform-ios">Pink для iOS</label>
-            <input name="platform" type="radio" id="platform-android" value="android"><label for="platform-android">Pink для Android</label>
-            <input name="platform" type="radio" id="platform-winphone" value="winphone"><label for="platform-winphone">Windows Phone</label>
-          </fieldset>
-
-          <fieldset class="about-user">
-            <legend>Опишите свои эмоции</legend>
-            <textarea name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
-
-            <input type="submit" class="competition__form--btn" value="Отправить форму">
-            <p class="competition__form--sure-info"><span>*</span> - обязательные поля</p>
-
-        </form>
-      </sechion>
-   </main>
+        </div>
+        <button class="form__submit-btn" type="submit">Отправить форму</button>
+        <p class="form__mandatory">
+          <span class="form__mandatory--red">&#8432;</span>
+          &mdash; обязательные поля
+        </p>
+      </form>
+    </main>
     <footer class="main-footer">
       <div class="main-footer__logo">
-        <img src="http://placehold.it/150x100" alt="Логотип">
+        <img src="http://placehold.it/150x100" alt="Логотип"></div>
+      <ul class="social">
+        <li class="social__item social__item--tw">
+          <a href="">twitter</a>
+        </li>
+        <li class="social__item social__item--fb">
+          <a href="">facebook</a>
+        </li>
+        <li class="social__item social__item--yt">
+          <a href="">youtube</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        Разработано
+        <img src="http://placehold.it/150x100" alt="">
       </div>
-        <ul class="social">
-          <li class="social__item social__item--tw"><a href="">twitter</a></li>
-          <li class="social__item social__item--fb"><a href="">facebook</a></li>
-          <li class="social__item social__item--yt"><a href="">youtube</a></li>
-        </ul>
-        <div class="copyright">
-          Разработано
-          <img src="http://placehold.it/150x100" alt="">
-        </div>
     </footer>
   </div>
-  </body>
+</body>
 </html>
