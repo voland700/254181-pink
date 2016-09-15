@@ -7,121 +7,116 @@
 <body>
   <div class="wrapper">
     <header class="main-hefder">
-      <div class="logo">
-        <a href="/">
-          <img src="http://placehold.it/76x22" class="logo-img" alt="Наш логотип"></a>
-      </div>
+      <a href="/" class="logo">PINK</a>
       <nav class="main-nav">
         <button class="main-nav__btn" type="button">Меню</button>
         <ul class="main-nav__list">
           <li>
-            <a href="#" class="main-nav_item--activ" >Главная</a>
+            <a href="#" class="main-nav__item main-nav__item--active" >Главная</a>
           </li>
           <li>
-            <a href="#" class="main-nav_item">Фотографии</a>
+            <a href="#" class="main-nav__item">Фотографии</a>
           </li>
           <li>
             <a href="#" class="main-nav_item">Конкурс</a>
           </li>
           <li>
-            <a href="#" class="main-nav_item">HMTL Academy</a>
+            <a href="#" class="main-nav__item">HMTL Academy</a>
           </li>
         </ul>
       </nav>
-    </header>
-    <main>
       <div class="competition-title">
         <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
       </div>
+    </header>
+    <main>
       <form action="/" class="form">
-        <div class="form-title">
+        <p class="form-title">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!  Пожалуйста, заполните форму ниже:
-        </div>
+        </p>
         <div class="form__wrapper">
           <div class="form__group">
             <label class="form__user-title" for="surname-info">Фамилия</label>
-            <input class="form__input-txt" type="text" id="surname-info"  name="surname-info" placeholder="Укажите фамилию"></div>
+            <input class="form__input-txt" type="text" id="surname-info"  name="surname-info" placeholder="Укажите фамилию">
+          </div>
           <div class="form__group">
             <label class="form__user-title" for="name-info">Имя</label>
-            <input class="form__input-txt" type="text" id="name-info" name="name-info" placeholder="Введите ваше имя"></div>
+            <input class="form__input-txt" type="text" id="name-info" name="name-info" placeholder="Введите ваше имя">
+          </div>
           <div class="form__group">
             <label class="form__user-title" for="patronymic-info">Отчество</label>
-            <input class="form__input-txt" type="text" id="patronymic-info" name="patronymic-info" placeholder="Ну и отчество тоже"></div>
+            <input class="form__input-txt" type="text" id="patronymic-info" name="patronymic-info" placeholder="Ну и отчество тоже">
+          </div>
         </div>
         <div class="form__wrapper">
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form__feat">
-              <li>
-                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="selfie"  name="selfie" checked>
-                <label class="form__feat-title" for="selfie">Сделал селфи с акулой</label>
-              </li>
-              <li>
-                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="burn"  name="burn" checked>
-                <label class="form__feat-title" for="burn">Обгорел на пляже</label>
-              </li>
-              <li>
-                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="see-chak" name="see-chak" >
-                <label class="form__feat-title" for="see-chak">Видел Чака Норриса</label>
-              </li>
-              <li>
-                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="buy-souvenirs" name="buy-souvenirs">
-                <label class="form__feat-title" for="buy-souvenirs">Накупил сувениров</label>
-              </li>
-              <li>
-                <input class="form__input form__input--checkbox" class="form__feat-title" class="form__input form__input--checkbox" type="checkbox" name="kept-piza" id="kept-piza" checked>
-                <label class="form__feat-title" for="kept-piza">Удержал башню</label>
-              </li>
-              <li>
-                <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="defeat-hotel" name="defeat-hotel">
-                <label class="form__feat-title" for="defeat-hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
+          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="form__feat">
+            <li>
+              <input class="form__input form__input--checkbox" type="checkbox" id="selfie"  name="selfie" checked>
+              <label class="form__feat-title" for="selfie">Сделал селфи с акулой</label>
+            </li>
+            <li>
+              <input class="form__input form__input--checkbox" type="checkbox" id="burn"  name="burn" checked>
+              <label class="form__feat-title" for="burn">Обгорел на пляже</label>
+            </li>
+            <li>
+              <input class="form__input form__input--checkbox" type="checkbox" id="see-chak" name="see-chak" >
+              <label class="form__feat-title" for="see-chak">Видел Чака Норриса</label>
+            </li>
+            <li>
+              <input class="form__input form__input--checkbox"  name="buy-souvenirs" type="checkbox" id="buy-souvenirs">
+              <label class="form__feat-title" for="buy-souvenirs">Накупил сувениров</label>
+            </li>
+            <li>
+              <input class="form__input form__input--checkbox" name="kept-piza" id="kept-piza" checked>
+              <label class="form__feat-title" for="kept-piza">Удержал башню</label>
+            </li>
+            <li>
+              <input class="form__input form__input--checkbox" class="form__feat-title" type="checkbox" id="defeat-hotel" name="defeat-hotel">
+              <label class="form__feat-title" for="defeat-hotel">Разгромил отель</label>
+            </li>
+          </ul>
         </div>
         <div class="form__wrapper">
           <div class="form__group">
             <label class="form__user-title" for="phone-info">Номерок телефона</label>
-            <input class="form__input-txt" type="tel" id="phone-info" name="phone-info" placeholder="Номер, пожалуйста"></div>
+            <input class="form__input-txt" type="tel" id="phone-info" name="phone-info" placeholder="Номер, пожалуйста">
+          </div>
           <div class="form__group">
             <label class="form__user-title" for="email-info">Адрес почты</label>
-            <input class="form__input-txt" type="email"  id="email-info" name="email-info" placeholder="Введите почту"></div>
+            <input class="form__input-txt" type="email"  id="email-info" name="email-info" placeholder="Введите почту">
+          </div>
         </div>
         <div class="form__wrapper">
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">С каким приложением путешествовали?</legend>
-            <ul class="form__feat">
-              <li>
-                <input class="form__input form__input--radio" name="platform-ios" type="radio" id="platform-ios" value="ios" checked>
-                <label class="form__feat-title" for="platform-ios">Pink для iOS</label>
-              </li>
-              <li>
-                <input class="form__input form__input--radio" name="platform-android" type="radio" id="platform-android" value="android">
-                <label class="form__feat-title" for="platform-android">Pink для Android</label>
-              </li>
-              <li>
-                <input class="form__input form__input--radio" name="platform-winphone" type="radio" id="platform-winphone" value="winphone">
-                <label class="form__feat-title" for="platform-winphone">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
+          <legend class="form__legend">С каким приложением путешествовали?</legend>
+          <ul class="form__feat">
+            <li>
+              <input class="form__input form__input--radio" name="platform-ios" type="radio" id="platform-ios" value="ios" checked>
+              <label class="form__feat-title" for="platform-ios">Pink для iOS</label>
+            </li>
+            <li>
+              <input class="form__input form__input--radio" name="platform-android" type="radio" id="platform-android" value="android">
+              <label class="form__feat-title" for="platform-android">Pink для Android</label>
+            </li>
+            <li>
+              <input class="form__input form__input--radio" name="platform-winphone" type="radio" id="platform-winphone" value="winphone">
+              <label class="form__feat-title" for="platform-winphone">Windows Phone</label>
+            </li>
+          </ul>
         </div>
         <div class="form__wrapper">
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">Ваши безбашенные достижения в путешествии</legend>
-            <textarea class="form__textarea" name="comment" id="comment" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fieldset>
+          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+          <textarea class="form__textarea" name="comment" id="comment" rows="10" placeholder="ВМожно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
         <button class="form__submit-btn" type="submit">Отправить форму</button>
         <p class="form__mandatory">
-          <span class="form__mandatory--red">&#8432;</span>
+          <span class="form__mandatory-red">*</span>
           &mdash; обязательные поля
         </p>
       </form>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__logo">
-        <img src="http://placehold.it/150x100" alt="Логотип"></div>
+      <a href="/" class="main-footer__logo">PINK</a>
       <ul class="social">
         <li class="social__item social__item--tw">
           <a href="">twitter</a>
@@ -134,8 +129,7 @@
         </li>
       </ul>
       <div class="copyright">
-        Разработано
-        <img src="http://placehold.it/150x100" alt="">
+        Разработано <!--Изображение будет задано background-image-->
       </div>
     </footer>
   </div>
