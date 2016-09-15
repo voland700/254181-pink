@@ -5,8 +5,112 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+  <div class="wrapper">
+    <header class="main-header">
+      <a href="/" class="logo">PINK</a>
+      <nav class="main-nav">
+        <button class="main-nav__btn" type="button">Меню</button>
+        <ul class="main-nav__list">
+          <li><a href="#" class="main-nav_item main-nav_item--active" >Главная</a></li>
+          <li><a href="#" class="main-nav_item">Фотографии</a></li>
+          <li><a href="#" class="main-nav_item">Конкурс</a></li>
+          <li><a href="#" class="main-nav_item">HMTL Academy</a></li>
+        </ul>
+      </nav>
+      <section class="download-img"></section>
+    </header>
+    <main>
+      <section class="download-app">
+        <button class="btn" type="button">Скачать приложение</button>
+        <div class="download-app__icon">
+          <div class="download-app__item download-app__item--apple">
+          </div>
+          <div class="download-app__item download-app__item--android">
+          </div>
+          <div class="download-app__item ddownload-app__item--microsoft">
+          </div>
+        </div>
+      </section>
+      <section class="slogans">
+        <h2 class="offer-title">Устали от мегаполиса?</h2>
+        <h2 class="offer-title">Нам есть, что вам предложить!</h2>
+        <h3 class="slogans__title-item">Поднимает настроение</h3>
+        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <h3 class="slogans__title-item">Меняет мир вокруг</h3>
+        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <h3 class="slogans__title-item">Заводит новых друзей</h3>
+        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        <img src="http://placehold.it/157x320" class="slider-img" alt="Салют!!!">
+      </section>
+      <section class="slider">
+        <div class="slider__item">
+          <h3 class="slider__title">Николай Петров</h3>
+          <p class="slider__txt">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <div class="slider__item">
+          <h3 class="slogans__title-item">Николай Петров</h3>
+          <p class="slider__txt">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <div class="slider__item">
+          <h3 class="slogans__title-item">Николай Петров</h3>
+          <p class="slider__txt">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <ul class="slider__label-list">
+          <li class="slider__label-item slider__label-item--active"></li>
+          <li class="slider__label-item"></li>
+          <li class="slider__label-item"></li>
+        </ul>
+      </section>
+      <section class="slider">
+        <table class="slider__price">
+          <tr class="slider__price-title">
+            <td></td>
+            <td class="slider__price-name slider__price-name--sticker">Стандарт 3,99 USD</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="slider__price-name slider__price-name--yes">Розовый фильтр</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="slider__price-name slider__price-name--yes">Смайлики</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="slider__price-name slider__price-name--no">Комментарии</td>
+            <td></td>
+          </tr>
+        </table>
+        <ul class="slider__label">
+          <li class="slider__label-item"></li>
+          <li class="slider__label-item slider__label-item--active"></li>
+          <li class="slider__label-item"></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <h2 class="offer-title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+      <div class="contacts">
+        <div class="contacts__phone">
+          <h3 class="contacts__title">Звоните</h3>
+          <p>7 (812) 555-66-66</p>
+        </div>
+        <div class="contacts__email">
+          <h3 class="contacts__title">Пишите</h3>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__address">
+          <h3 class="contacts__title">Приезжайте в гости</h3>
+          <p>ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
+        <div class="map">
+          <img src="http://placehold.it/150x100" alt="Карта">
+        </div>
+    </footer>
+  </div>
   </body>
 </html>
