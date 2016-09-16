@@ -1,0 +1,15 @@
+@normalize.css;
+html,
+body {
+  min-width: 320px;
+  font-family: $ff-base;
+  font-size: $fz-base;
+  line-height: $lh;
+  color: $c-bg;
+  background-color: $c-bglight;
+}
+
+.no-show {
+  position: absolute;
+  left: -9999px;
+}
