@@ -1,0 +1,68 @@
+.main-header{
+  background-color: $c-bg;
+}
+
+.main-header__title{
+  @include clearfix;
+  &--menu-open {
+    border-bottom: 1px solid $c-b;
+    //display: none; /*закрытое меню - временно*/
+
+  }
+  &--menu-close {
+    background-color: rgba($c-b, 0.3);
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.logo{
+  display: block;
+  float: left;
+  padding: 20px;
+  @include size(75px, 22px);
+  background: url('../img/logo-pink-white-mobile.svg') 50% 50% no-repeat;
+}
+
+.main-header__btn {
+  float: right;
+  cursor: pointer;
+  padding: 20px;
+  &--open {
+    @include size(50px, 24px);
+  }
+  &--close{
+    @include size(24px, 23px);
+  }
+}
+
+.main-nav {
+
+}
+
+.main-nav__list{
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+    border-top: 1px solid lighten($c-bg, 11.7647);
+    border-bottom: 1px solid $c-b;
+  }
+}
+.main-nav_item{
+  display: inline-block;
+  width: 100%;
+  @include font(18px, 32px);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $c-w;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.download-img{
+  height: 395px;
+  background: url('../img/iphone-hand-mobile@1x.png') 0 100% no-repeat,  url('../img/bg-back-mobile@1x.jpg') 50% 50% no-repeat;
+}

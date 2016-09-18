@@ -1,0 +1,87 @@
+.slider {
+  text-align: center;
+  position: relative;
+}
+
+.slider--bg-w {
+  background-color: $c-w;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.slider__txt{
+  @include font(14px, 30px);
+  font-weight: normal;
+  color: $c-bg;
+  text-align: center;
+}
+
+.slider--bg-g {
+  background-color: $c-grey;
+}
+
+.slider__price{
+  width: 100%;
+}
+
+.slider__price {
+  border-color: $c-border;
+  td {
+    background-color: $c-w;
+  }
+}
+
+.slider__price-title{
+  background-color: $c-bg;
+  text-align: center;
+}
+
+.slider__price-name--sticker {
+  @include font(18px, 30px);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $c-w;
+  span {
+    @include font(24px, 30px);
+    font-weight: normal;
+  }
+}
+
+.slider__price-name--yes,
+.slider__price-name--no {
+  @include font(14px, 30px);
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $c-bg;
+}
+
+.slider__toggles {
+  font-size: 0;
+}
+
+.slider__toggle {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 19px;
+  @include size(6px, 6px);
+  background-color: rgba($c-bg, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.slider__input {
+  display: none;
+}
+
+
+
+@include toggle(reviews-input-1);
+@include toggle(reviews-input-2);
+@include toggle(reviews-input-3);
+
+@include toggle(prices-input-1);
+@include toggle(prices-input-2);
+@include toggle(prices-input-3);
+
+

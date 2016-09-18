@@ -1,12 +1,15 @@
 $ff-base: "OpenSans", Arial, Calibri, sans-serif;
-$fz-base: 14px;
+$fz-base: 18px;
 $lh: 1.8;
 
-$c-dark: #000;
+$c-b: #000;
 $c-bg: #283645;
-$c-bglight: #ffffff;
+$c-w: #ffffff;
 $c-grey: #f2f2f2;
 $c-border: #e5e5e5;
 $c-accent: #d22856;
 $c-btn: #2aab6d;
 $c-grey-dark: #b5b9be;
+
+$tablet-widths: 'min-width: 700px';
+$desktop-widths: 'min-width: 1200px';
