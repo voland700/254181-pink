@@ -22,18 +22,23 @@
   float: left;
   padding: 20px;
   @include size(75px, 22px);
-  background: url('../img/logo-pink-white-mobile.svg') 50% 50% no-repeat;
+  background: url("../img/logo-pink-white-mobile.svg") 50% 50% no-repeat;
 }
 
 .main-header__btn {
+  display: block;
   float: right;
-  cursor: pointer;
-  padding: 20px;
+  //cursor: pointer;
+  margin: 20px;
+  background-color: $c-bg;
+  border: none;
   &--open {
-    @include size(50px, 24px);
-  }
-  &--close{
     @include size(24px, 23px);
+    background: url("../img/icon-menu-cross.svg") 50% 50% no-repeat;
+  }
+  &--close {
+    @include size(50px, 24px);
+    background: url("../img/icon-menu-burger.svg") 50% 50% no-repeat;
   }
 }
 
@@ -64,5 +69,5 @@
 
 .download-img{
   height: 395px;
-  background: url('../img/iphone-hand-mobile@1x.png') 0 100% no-repeat,  url('../img/bg-back-mobile@1x.jpg') 50% 50% no-repeat;
+  background: url("../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,  url("../img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
 }

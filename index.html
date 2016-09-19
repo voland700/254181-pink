@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <div class="wrapper">
     <header class="main-header">
-      <div class='main-header__title main-header__title--menu-open'>
-        <a href="/" class="logo"></a>     <!-- class='page-header__logo-img' -->
-        <input class='main-header__btn main-header__btn--open' type='image' name='button' src='img/icon-menu-cross.svg'>
+      <div class="main-header__title main-header__title--menu-open">
+        <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
+        <button class="main-header__btn main-header__btn--open" type="button" name="menu-open">
+        </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -22,9 +22,10 @@
           <li><a href="#" class="main-nav_item">HMTL Academy</a></li>
         </ul>
       </nav>
-      <div class='main-header__title main-header__title--menu-close'>
-        <a href="/" class="logo"></a>     <!-- class='page-header__logo-img' -->
-        <input class='main-header__btn main-header__btn--close' type='image' name='button' src='img/icon-menu-burger.svg'>
+      <div class="main-header__title main-header__title--menu-close">
+        <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
+        <button class="main-header__btn main-header__btn--close" type="image" name="menu-closed" src="img/icon-menu-burger.svg">
+        </button>
       </div>
       <section class="download-img">
       </section>
@@ -58,20 +59,23 @@
         </div>
       </section>
       <section class="slider slider--bg-w">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
         <div class="slider__item">
           <h3 class="slogans__title-item">Николай Петров</h3>
           <p class="slider__txt">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
-          <input class='slider__input' type='radio' name='reviews' id='reviews-input-1' checked>
-          <input class='slider__input' type='radio' name='reviews' id='reviews-input-2'>
-          <input class='slider__input' type='radio' name='reviews' id='reviews-input-3'>
-        <div class='reviews__toggles slider__toggles'>
-          <label class='slider__toggle' for='reviews-input-1'>1</label>
-          <label class='slider__toggle' for='reviews-input-2'>2</label>
-          <label class='slider__toggle' for='reviews-input-3'>3</label>
+        <div class="reviews__toggles slider__toggles">
+          <label class="slider__toggle" for="reviews-input-1">1</label>
+          <label class="slider__toggle" for="reviews-input-2">2</label>
+          <label class="slider__toggle" for="reviews-input-3">3</label>
         </div>
       </section>
       <section class="slider slider--bg-g">
+        <input class="slider__input" type="radio" name="prices" id="prices-input-1">
+        <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
+        <input class="slider__input" type="radio" name="prices" id="prices-input-3">
         <table class="slider__price">
           <tr class="slider__price-title">
             <th></th>
@@ -94,14 +98,11 @@
             <td></td>
           </tr>
         </table>
-          <input class='slider__input' type='radio' name='prices' id='prices-input-1'>
-          <input class='slider__input' type='radio' name='prices' id='prices-input-2' checked>
-          <input class='slider__input' type='radio' name='prices' id='prices-input-3'>
-          <div class='prices__toggles slider__toggles'>
-            <label class='slider__toggle' for='prices-input-1'>1</label>
-            <label class='slider__toggle' for='prices-input-2'>2</label>
-            <label class='slider__toggle' for='prices-input-3'>3</label>
-          </div>
+        <div class="prices__toggles slider__toggles">
+          <label class="slider__toggle" for="prices-input-1">1</label>
+          <label class="slider__toggle" for="prices-input-2">2</label>
+          <label class="slider__toggle" for="prices-input-3">3</label>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
