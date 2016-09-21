@@ -1,0 +1,27 @@
+.download-app {
+  background-color: $c-bg;
+  padding: 30px 20px;
+}
+.download-app__btn{
+  display: block;
+  background-color: $c-bg;
+  @include font(18px, 18px);
+  font-weight: bold;
+  color: $c-w;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 285px;
+  margin: 0 auto;
+  border: 3px solid $c-w;
+  border-radius: 30px;
+}
+
+
+.download-app__txt {
+  @include font(14px, 24px);
+  font-weight: lighter;
+  text-align: center;
+  color: $c-w;
+  margin: 25px auto 0 auto;
+  padding: 0;
+ }
