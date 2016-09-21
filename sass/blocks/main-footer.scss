@@ -3,7 +3,16 @@
 }
 
 .contacts {
-  margin: 0 20px;
+  margin: 50px 20px;
+  text-align: center;
+}
+
+.contacts__title-ploy {
+  @include font(24px, 30px);
+  font-weight: 400;
+  color: $c-bg;
+  z-index: 5;
+  margin-bottom: 30px;
 }
 
 .contacts__title {
@@ -11,12 +20,18 @@
   font-weight: bold;
   color: $c-bg;
 }
+.contacts__email,
 .contacts__address,
 .contacts__phone {
+  margin: 40px 0;
   p{
     @include font(24px, 28px);
     font-weight: lighter;
     color: $c-accent;
+    margin: 0;
+  }
+  h3 {
+    margin-bottom: 7px;
   }
 }
 .contacts__email {

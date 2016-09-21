@@ -15,7 +15,9 @@
   border: 3px solid $c-w;
   border-radius: 30px;
 }
-
+.download-app__title{
+  display: none;
+}
 
 .download-app__txt {
   @include font(14px, 24px);

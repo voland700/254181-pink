@@ -29,20 +29,21 @@
       </div>
       <section class="download-img">
       </section>
+        <div class="download-app">
+          <h2 class="download-app__title">Взгляните на жизнь иначе!</h2>
+          <button class="download-app__btn" type="button">Скачать приложение</button>
+          <div class="download-app__icon">
+            <div class="download-app__item download-app__item--apple">
+            </div>
+            <div class="download-app__item download-app__item--android">
+            </div>
+            <div class="download-app__item ddownload-app__item--microsoft">
+            </div>
+          </div>
+          <p class="download-app__txt">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
     </header>
     <main>
-      <section class="download-app">
-        <button class="download-app__btn" type="button">Скачать приложение</button>
-        <div class="download-app__icon">
-          <div class="download-app__item download-app__item--apple">
-          </div>
-          <div class="download-app__item download-app__item--android">
-          </div>
-          <div class="download-app__item ddownload-app__item--microsoft">
-          </div>
-        </div>
-        <p class="download-app__txt">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
       <section class="slogans">
         <div class="slogans__offer">
           <h2 class="offer-title">Устали от серости мегаполиса?</h2>
@@ -76,28 +77,60 @@
         <input class="slider__input" type="radio" name="prices" id="prices-input-1">
         <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
         <input class="slider__input" type="radio" name="prices" id="prices-input-3">
-        <table class="slider__price">
-          <tr class="slider__price-title">
-            <th></th>
-            <th class="slider__price-name slider__price-name--sticker">Стандарт <span>3,99 USD</span></th>
-            <th></th>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="slider__price-name slider__price-name--yes">Розовый фильтр</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="slider__price-name slider__price-name--yes">Смайлики</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="slider__price-name slider__price-name--no">Комментарии</td>
-            <td></td>
-          </tr>
-        </table>
+
+          <table class="slider__price">
+            <tr class="slider__price-title">
+              <th class="slider__price-name--mobile-hidden"></th>
+              <th class="slider__price-name">
+                <span class="slider__price-name--optional"> База
+                  <span class="slider__price-name--money">1,99 USD</span>
+                </span>
+              </th>
+              <th class="slider__price-name slider__price-name--sticker"> Стандарт <span class="slider__price-name--money"> 9,99 USD</span></th>
+              <th class="slider__price-name">
+                <span class="slider__price-name--optional">Анлим
+                  <span class="slider__price-name--money"> 1,99 USD</span>
+                </span>
+              </th>
+            </tr>
+            <tr>
+              <td class="slider__price-name  slider__price-name--mobile-hidden"> Розовый фильтр </td>
+              <td class="sslider__price-name slider__price-name--yes">
+                <span class="slider__price-name--optional">Розовый фильтр</span>
+              </td>
+              <td class="sslider__price-name slider__price-name--yes">
+                <span>Розовый фильтр</span>
+              </td>
+              <td class="sslider__price-name slider__price-name--yes">
+                <span class="slider__price-name--optional">Розовый фильтр</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="slider__price-name  slider__price-name--mobile-hidden">Смайлики</td>
+              <td class="sslider__price-name slider__price-name--no">
+                <span class="slider__price-name--optional">Смайлики</span>
+              </td>
+              <td class="sslider__price-name slider__price-name--yes">
+                <span>Смайлики</span>
+              </td>
+              <td class="sslider__price-name slider__price-name--yes">
+                <span class="slider__price-name--optional">Смайлики</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="slider__price-name  slider__price-name--mobile-hidden"> Комментарии </td>
+              <td class="sslider__price-name slider__price-name--no">
+                <span class="slider__price-name--optional">Комментарии</span>
+              </td>
+              <td class="sslider__price-name slider__price-name--no">
+                <span>Комментарии</span>
+              </td>
+              <td class="sslider__price-name slider__price-name--yes">
+                <span class="slider__price-name--optional">Комментарии</span>
+              </td>
+            </tr>
+          </table>
+
         <div class="prices__toggles slider__toggles">
           <label class="slider__toggle" for="prices-input-1">1</label>
           <label class="slider__toggle" for="prices-input-2">2</label>
@@ -107,7 +140,7 @@
     </main>
     <footer class="main-footer">
       <div class="contacts">
-        <h2 class="offer-title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <h2 class="contacts__title-ploy">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <div class="contacts__phone">
           <h3 class="contacts__title">Звоните:</h3>
           <p>7 (812) 555-66-66</p>
