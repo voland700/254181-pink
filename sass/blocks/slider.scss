@@ -8,11 +8,25 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.slider__title-item{
+  @include font(18px, 24px);
+  font-weight: bold;
+  color: $c-b;
+  z-index: 5;
+  text-align: center;
+  margin-top: 40px;
+}
+
 .slider__txt{
   @include font(14px, 30px);
   font-weight: normal;
   color: $c-bg;
   text-align: center;
+}
+
+.slider__user-age {
+  display: none;
 }
 
 .slider--bg-g {
@@ -128,4 +142,20 @@ th .slider__price-name--optional {
 @include toggle(prices-input-2);
 @include toggle(prices-input-3);
 
+@media ($tablet-widths) {
+  .slider__item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .slider__title-item{
+    @include font(24px, 30px);
+  }
+  .slider__txt{
+    @include font(18px, 30px);
+  }
 
+  .slider__user-age {
+    display: block;
+    @include font(18px, 30px);
+  }
+}

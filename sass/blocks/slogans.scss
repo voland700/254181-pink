@@ -4,7 +4,9 @@
 
 .slogans__offer {
   background-color: $c-w;
-  padding: 25px 20px;
+  width: 220px;
+  margin: 40px auto;
+  /*padding: 25px 20px;*/
 }
 
 /*.slogans__bg-decoration {
@@ -23,7 +25,7 @@
   padding: 20px 55px 0 55px;
 }
 
-.offer-title {
+.slogans__offer-title {
   @include font(24px, 28px);
   font-weight: 400;
   color: $c-bg;
@@ -54,3 +56,54 @@
   background-image: url(../img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
 }
+
+@media ($tablet-widths) {
+  .slogans__offer {
+    width: 600px;
+    margin: 50px auto;
+  }
+
+  .slogans__offer-title {
+    @include font(35px, 35px); /*Шрифт на макете 40px!!!*/
+    margin: 0 auto;
+    &--small {
+      width: 500px;
+    }
+  }
+
+  .slogans__title {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .slogans__title-wrap {
+   order: 1;
+   width: 50%;
+
+  }
+
+  .slogans__title-item {
+  text-align: left;
+
+  }
+
+  .slogans__title-txt {
+    text-align: left;
+    &:last-child{
+      margin-bottom: 60px;
+    }
+  }
+
+  .slogans__title-img {
+    align-self: flex-end;
+  }
+
+}
+
+
+
+
+
+
+

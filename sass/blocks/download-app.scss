@@ -1,3 +1,16 @@
+.download {
+  height: 730px;
+  /*background: url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.download-hand {
+  background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat, url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  height: 460px;
+
+}
+
 .download-app {
   background-color: $c-bg;
   padding: 30px 20px;
@@ -27,3 +40,65 @@
   margin: 25px auto 0 auto;
   padding: 0;
  }
+
+ .download-app__icon{
+  width: 210px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+
+
+ }
+.download-app__item {
+  width: 59px;
+  height: 59px;
+ }
+
+ .download-app__item--apple {
+  background: url("../img/logo-apple.svg") 50% 50% no-repeat;
+ }
+ .download-app__item--android {
+  background: url("../img/logo-android.svg") 50% 50% no-repeat;
+ }
+
+ .download-app__item--microsoft {
+  background: url("../img/logo-microsoft.svg") 50% 50% no-repeat;
+ }
+
+@media ($tablet-widths) {
+  .download {
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat, url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+  }
+  .download-hand {
+  background-image: none;
+  height: auto;
+  }
+
+  .download-app {
+  order: 1;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: transparent;
+  padding: 30px 20px;
+  }
+
+  .download-app__title {
+    width: 200px;
+    margin: 40px auto;
+    display: block;
+    @include font(40px, 40px);
+    font-weight: lighter;
+    color: $c-w;
+    text-align: center;
+  }
+  .download-app__txt{
+    width: 300px;
+    text-align: center;
+
+  }
+}
