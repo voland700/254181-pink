@@ -1,0 +1,98 @@
+.form {
+  margin: 20px 20px;
+}
+
+.form-title {
+  width: 280px;
+  margin: 50px auto;
+  @include font(14px, 30px);
+  text-align: center;
+}
+
+legend {
+  @include font(14px, 18px);
+  text-align: center;
+  text-transform: uppercase;
+  color: $c-accent;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+   @include font(14px, 30px);
+   padding-left: 20px;
+   text-transform: uppercase;
+
+}
+
+input {
+  height: 58px;
+  padding-left: 20px;
+  border: 2px solid $c-border;
+  &::-moz-placeholder{
+    @include font(18px, 30px);
+    text-transform: uppercase;
+    color: $c-bg;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.form__wrapper {
+   display: flex;
+}
+
+.form__wrapper--user {
+  /*flex-direction: column;*/
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    .form__group--user {
+      width: 100%;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      label {
+        display: block;
+        color: $c-accent;
+      }
+
+      input {
+        display: block;
+        /*width: auto; */
+        flex-grow: 1;
+      }
+  }
+}
+
+.form__legend--progress {
+  width: 220px;
+}
+
+
+  .form__feat-title {
+    span {
+      display: block;
+      padding-left: 70px;
+    }
+
+  span::before {
+    content: "";
+    display: inline-block;
+    /*position: absolute;
+    left: 0;
+    top: 3px; */
+    width: 35px;
+    height: 35px;
+    border: 2px solid $c-border;
+    background-color: $c-w;;
+
+  }
+}
+
+
+

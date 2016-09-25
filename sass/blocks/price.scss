@@ -23,13 +23,6 @@
   vertical-align: middle;
 }
 
-/*Временно, для моб.версии */
-/*.price__title-item,
-.price__list-item {
-li:first-child {
-  display: none;
-  }
-} */
 
 li:nth-child(1).price__title-item,
 li:nth-child(1).price__list-item {
@@ -118,6 +111,27 @@ li:nth-child(4).price__list-item span {
   li:nth-child(4).price__title-item span  {
     display: block;
   }
+
+}
+
+@media ($desktop-widths) {
+  .price {
+    width: 940px;
+    margin: 0 auto;
+    }
+  .price__title-item {
+    width: 235px;
+    height: 100px;
+  }
+
+  span.price__title-item--money {
+    @include font(24px, 30px);
+  }
+
+  .price__list-item {
+    @include font(18px, 30px);
+  }
+
 
 
 }
