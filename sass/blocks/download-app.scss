@@ -71,11 +71,12 @@
     height: 650px;
     display: flex;
     flex-direction: row;
-    background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat, url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+    background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat, url("../img/bg-back-mobile@delet.jpg") 0 100% no-repeat;
+
   }
   .download-hand {
   background-image: none;
-  height: auto;
+  height: 100%;
   }
 
   .download-app {

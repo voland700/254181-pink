@@ -29,97 +29,9 @@
   display: none;
 }
 
-.slider--bg-g {
-  background-color: $c-grey;
-  padding-top: 65px;
-}
-
-.slider__price{
-  width: 100%;
-  //margin: 20px auto;
-}
-
-.slider__price {
-  border-collapse: collapse;
-  td {
-    background-color: $c-w;
-    text-align: left;
-    border: 2px solid $c-border;
-    height: 60px;
-    padding-left: 25px;
-  }
-}
-
-.slider__price-title{
-  background-color: $c-bg;
-  text-align: center;
-}
-
-.slider__price-title {
-  @include font(18px, 30px);
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $c-w;
-  th {
-    height: 100px;
-    border: 2px solid $c-border;
-  }
-  th:first-child {
-  background-color: $c-grey;
-  }
-}
-.slider__price-name--money {
-  @include font(24px, 30px);
-  font-weight: normal;
-  display: block;
-}
-
-
-.slider__price-name {
-&-sticker{
- // background-image: url("../img/icon-yes.svg");
- // background-repeat: no-repeat;
-  }
-&--optional {
-  display: none; /* скрывает элементы таблицы на мобильной версии */
-  }
-&--money {
-  @include font(24px, 30px);
-  font-weight: normal;
-  display: block;
-}
-&--yes,
-&--no {
-  @include font(14px, 30px);
-  font-weight: normal;
-  text-transform: uppercase;
-  color: $c-bg;
-  }
-&--mobile-hidden{
-  display: none;
-}
-
-&--yes{
- // background-image: url("../img/icon-yes.svg");
- // background-repeat: no-repeat;
-  }
-
-&--no {
-  // background-image: url("../img/icon-no.svg");
-  // background-repeat: no-repeat;
-  }
-}
-
-th .slider__price-name--optional {
-//   display: none; /* скрывает элементы таблицы на мобильной версии */
-  }
-
-.slider__toggles {
-  font-size: 0;
-}
-
 .slider__toggle {
   display: inline-block;
+  font-size: 0;
   vertical-align: top;
   margin-right: 19px;
   @include size(6px, 6px);
@@ -138,24 +50,13 @@ th .slider__price-name--optional {
 @include toggle(reviews-input-2);
 @include toggle(reviews-input-3);
 
-@include toggle(prices-input-1);
-@include toggle(prices-input-2);
-@include toggle(prices-input-3);
+
+/*
 
 @media ($tablet-widths) {
-  .slider__item {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .slider__title-item{
-    @include font(24px, 30px);
-  }
-  .slider__txt{
-    @include font(18px, 30px);
-  }
 
-  .slider__user-age {
-    display: block;
-    @include font(18px, 30px);
-  }
+
+
 }
+*/
+

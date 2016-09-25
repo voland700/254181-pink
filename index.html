@@ -9,24 +9,27 @@
   <body>
   <div class="wrapper">
     <header class="main-header">
-      <div class="main-header__title main-header__title--menu-open">
-        <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
-        <button class="main-header__btn main-header__btn--open" type="button" name="menu-open">
-        </button>
+      <div class="main-header__wrap">
+        <div class="main-header__title main-header__title--menu-open">
+          <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
+          <button class="main-header__btn main-header__btn--open" type="button" name="menu-open">
+          </button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li><a href="#" class="main-nav_item main-nav_item--active" >Главная</a></li>
+            <li><a href="#" class="main-nav_item">Фотографии</a></li>
+            <li><a href="#" class="main-nav_item">Конкурс</a></li>
+            <li><a href="#" class="main-nav_item">HMTL Academy</a></li>
+          </ul>
+        </nav>
+        <div class="main-header__title main-header__title--menu-close">
+          <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
+          <button class="main-header__btn main-header__btn--close" type="image" name="menu-closed" src="img/icon-menu-burger.svg">
+          </button>
+        </div>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li><a href="#" class="main-nav_item main-nav_item--active" >Главная</a></li>
-          <li><a href="#" class="main-nav_item">Фотографии</a></li>
-          <li><a href="#" class="main-nav_item">Конкурс</a></li>
-          <li><a href="#" class="main-nav_item">HMTL Academy</a></li>
-        </ul>
-      </nav>
-      <div class="main-header__title main-header__title--menu-close">
-        <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
-        <button class="main-header__btn main-header__btn--close" type="image" name="menu-closed" src="img/icon-menu-burger.svg">
-        </button>
-      </div>
+    </header>
       <section class="download">
         <div class="download-hand">
         </div>
@@ -44,7 +47,7 @@
            <p class="download-app__txt">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
-    </header>
+
     <main>
       <section class="slogans">
         <div class="slogans__offer">
@@ -93,63 +96,73 @@
         </div>
       </section>
 
-      <section class="slider slider--bg-g">
+      <section class="price__wrap">
         <input class="slider__input" type="radio" name="prices" id="prices-input-1">
         <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
         <input class="slider__input" type="radio" name="prices" id="prices-input-3">
 
-          <table class="slider__price">
-            <tr class="slider__price-title">
-              <th class="slider__price-name--mobile-hidden"></th>
-              <th class="slider__price-name">
-                <span class="slider__price-name--optional"> База
-                  <span class="slider__price-name--money">1,99 USD</span>
-                </span>
-              </th>
-              <th class="slider__price-name slider__price-name--sticker"> Стандарт <span class="slider__price-name--money"> 9,99 USD</span></th>
-              <th class="slider__price-name">
-                <span class="slider__price-name--optional">Анлим
-                  <span class="slider__price-name--money"> 1,99 USD</span>
-                </span>
-              </th>
-            </tr>
-            <tr>
-              <td class="slider__price-name  slider__price-name--mobile-hidden"> Розовый фильтр </td>
-              <td class="sslider__price-name slider__price-name--yes">
-                <span class="slider__price-name--optional">Розовый фильтр</span>
-              </td>
-              <td class="sslider__price-name slider__price-name--yes">
-                <span>Розовый фильтр</span>
-              </td>
-              <td class="sslider__price-name slider__price-name--yes">
-                <span class="slider__price-name--optional">Розовый фильтр</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="slider__price-name  slider__price-name--mobile-hidden">Смайлики</td>
-              <td class="sslider__price-name slider__price-name--no">
-                <span class="slider__price-name--optional">Смайлики</span>
-              </td>
-              <td class="sslider__price-name slider__price-name--yes">
-                <span>Смайлики</span>
-              </td>
-              <td class="sslider__price-name slider__price-name--yes">
-                <span class="slider__price-name--optional">Смайлики</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="slider__price-name  slider__price-name--mobile-hidden"> Комментарии </td>
-              <td class="sslider__price-name slider__price-name--no">
-                <span class="slider__price-name--optional">Комментарии</span>
-              </td>
-              <td class="sslider__price-name slider__price-name--no">
-                <span>Комментарии</span>
-              </td>
-              <td class="sslider__price-name slider__price-name--yes">
-                <span class="slider__price-name--optional">Комментарии</span>
-              </td>
-            </tr>
-          </table>
+        <div class="price">
+
+          <ul class="price__title">
+            <li class="price__title-item price__title-item--hidden"></li>
+            <li class="price__title-item">
+              <span>База<span class="price__title-item--money">1,99 USD</span></span>
+            </li>
+            <li class="price__title-item price__title-item--sticker">
+              <span>Стандарт<span class="price__title-item--money">3,99 USD</span></span>
+            </li>
+            <li class="price__title-item">
+              <span>Стандарт<span class="price__title-item--money">3,99 USD</span></span>
+            </li>
+          </ul>
+
+          <ul class="price__list">
+            <li class="price__list-item">
+              <span class="price__list-item--hidden">Розовый фильтр</span>
+            </li>
+            <li class="price__list-item price__title-item--yes">
+              <span class="price__list-item--hidden">Розовый фильтр</span>
+            </li>
+            <li class="price__list-item price__title-item--yes">
+              <span>Розовый фильтр</span>
+            </li>
+            <li class="price__list-item price__title-item--yes">
+              <span class="price__list-item--hidden">Розовый фильтр</span>
+            </li>
+          </ul>
+
+          <ul class="price__list">
+            <li class="price__list-item">
+              <span class="price__list-item--hidden">Смайлики</span>
+            </li>
+            <li class="price__list-item price__title-item--no">
+              <span class="price__list-item--hidden">Смайлики</span>
+            </li>
+            <li class="price__list-item price__title-item--yes">
+              <span>Смайлики</span>
+            </li>
+            <li class="price__list-item price__title-item--yes">
+              <span class="price__list-item--hidden">Смайлики</span>
+            </li>
+          </ul>
+
+          <ul class="price__list">
+            <li class="price__list-item">
+              <span class="price__list-item--hidden">Комментарии</span>
+            </li>
+            <li class="price__list-item price__title-item--no">
+              <span class="price__list-item--hidden">Комментарии</span>
+            </li>
+            <li class="price__list-item price__title-item--no">
+              <span>Комментарии</span>
+            </li>
+            <li class="price__list-item price__title-item--yes">
+              <span class="price__list-item--hidden">Комментарии</span>
+            </li>
+          </ul>
+
+        </div>
+
 
         <div class="prices__toggles slider__toggles">
           <label class="slider__toggle" for="prices-input-1">1</label>
@@ -159,8 +172,9 @@
       </section>
     </main>
     <footer class="main-footer">
+      <h2 class="contacts__title-ploy">Остались вопросы?<br>Свяжитесь с нами!</h2>
       <div class="contacts">
-        <h2 class="contacts__title-ploy">Остались вопросы?<br>Свяжитесь с нами!</h2>
+
         <div class="contacts__phone">
           <h3 class="contacts__title">Звоните:</h3>
           <p>7 (812) 555-66-66</p>
@@ -174,8 +188,25 @@
           <p>ул. Большая Конюшенная, 19/8</p>
         </div>
       </div>
-        <div class="map">
+      <div class="main-footer__map"></div>
+
+      <div class="main-footer__wrap">
+        <div class="main-footer__logo">
         </div>
+
+        <div class="main-footer__social">
+          <div class="main-footer__social-fb"><a href="#"></a></div>
+          <div class="main-footer__social-tw"><a href="#"></a></div>
+          <div class="main-footer__social-yt"><a href="#"></a></div>
+        </div>
+
+        <div class="main-footer__copyright">
+          <p>Разработано</p>
+          <span class="main-footer__academy"></span>
+        </div>
+
+      </div>
+
     </footer>
   </div>
   </body>

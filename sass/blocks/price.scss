@@ -1,0 +1,123 @@
+.price__wrap {
+  width: 100%;
+  background-color: $c-grey;
+  padding-top: 65px;
+}
+
+.price {
+  display: table;
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.price__title,
+.price__list {
+  display: table-row;
+  vertical-align: middle;
+}
+
+.price__title-item,
+.price__list-item {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*Временно, для моб.версии */
+/*.price__title-item,
+.price__list-item {
+li:first-child {
+  display: none;
+  }
+} */
+
+li:nth-child(1).price__title-item,
+li:nth-child(1).price__list-item {
+  display: none;
+}
+
+li:nth-child(2).price__title-item span,
+li:nth-child(2).price__list-item span {
+  display: none;
+}
+
+li:nth-child(4).price__title-item span,
+li:nth-child(4).price__list-item span {
+  display: none;
+}
+/*Временно, для моб.версии - end*/
+
+
+.price__title-item {
+  background-color: $c-bg;
+  text-align: center;
+  text-transform: uppercase;
+  color: $c-w;
+  height: 100px;
+  border: 2px solid $c-border;
+  span {
+    @include font(18px, 30px);
+    font-weight: bold;
+  }
+}
+
+.price__list-item {
+  @include font(14px, 30px);
+}
+
+  span.price__title-item--money {
+    @include font(24px, 30px);
+    font-weight: normal;
+    display: block;
+  }
+
+.price__list-item{
+  background-color: $c-w;
+  text-align: left;
+  border: 2px solid $c-border;
+  height: 60px;
+  padding-left: 25px;
+
+}
+
+.prices__toggles {
+  text-align: center;
+}
+
+@include toggle(prices-input-1);
+@include toggle(prices-input-2);
+@include toggle(prices-input-3);
+
+@media ($tablet-widths) {
+  .price {
+    width: 620px;
+    margin: 0 auto;
+    }
+  .price__title-item {
+    width: 155px;
+    height: 80px;
+  }
+
+  .price__title-item--hidden {
+    border: none;
+    background: none;
+  }
+  span.price__title-item--money {
+    @include font(18px, 30px);
+  }
+
+  li:nth-child(1).price__title-item,
+  li:nth-child(1).price__list-item {
+    display: table-cell;
+  }
+
+  li:nth-child(3).price__list-item span {
+    display: none;
+  }
+  li:nth-child(2).price__title-item span,
+  li:nth-child(4).price__title-item span  {
+    display: block;
+  }
+
+
+}
