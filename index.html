@@ -30,181 +30,134 @@
         </div>
       </div>
     </header>
-      <section class="download">
-        <div class="download__wrap">
-          <div class="download-hand">
-          </div>
-          <div class="download-app">
-            <h2 class="download-app__title">Взгляните на жизнь иначе!</h2>
-            <button class="download-app__btn" type="button">Скачать приложение</button>
-            <div class="download-app__icon">
-              <div class="download-app__item download-app__item--apple">
-              </div>
-              <div class="download-app__item download-app__item--android">
-              </div>
-              <div class="download-app__item download-app__item--microsoft">
-              </div>
-            </div>
-             <p class="download-app__txt">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
-        </div>
-      </section>
+    <section class="picture">
+      <div class="picture__wrap">
+        <h2 class="picture__title">Конкурс на самое безбашеное путешествие с Пинк</h2>
+      </div>
+    </section>
 
     <main>
-      <section class="slogans">
-        <div class="slogans__offer">
-          <h2 class="slogans__offer-title">Устали от серости мегаполиса?</h2>
-          <h2 class="slogans__offer-title slogans__offer-title--small">Нам есть, что вам предложить!</h2>
+      <form action="/" class="form">
+        <p class="form-title">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="form-title-hiden">Пожалуйста, заполните форму ниже:</span>
+        </p>
+
+        <div class="form__wrapper form__wrapper--user">
+          <div class="form__group form__group--user">
+            <label class="form__user-title" for="surname-info">Фамилия</label>
+            <input class="form__input-txt" type="text" id="surname-info"  name="surname-info" placeholder="Укажите фамилию">
+          </div>
+          <div class="form__group form__group--user">
+            <label class="form__user-title" for="name-info">Имя</label>
+            <input class="form__input-txt" type="text" id="name-info" name="name-info" placeholder="Введите ваше имя">
+          </div>
+          <div class="form__group form__group--user">
+            <label class="form__user-title" for="patronymic-info">Отчество</label>
+            <input class="form__input-txt" type="text" id="patronymic-info" name="patronymic-info" placeholder="Ну и отчество тоже">
+          </div>
         </div>
 
-        <div class="slogans__title">
-          <div class="slogans__title-wrap">
-            <div class="slogans__wrap-item slogans__wrap-item--mood">
-              <h3 class="slogans__title-item">Поднимает настроение</h3>
-              <p class="slogans__title-txt">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <div class="form__wrapper--advance-grey">
+          <fieldset class="form__wrapper form__wrapper--advance">
+            <legend class="form__legend form__legend--advance">Ваши безбашенные достижения в путешествии</legend>
+
+            <div class="form__group form__group--advance">
+              <label class="form__label form__label--checkbox  form__label--control-text">
+                <input type="checkbox" name="selfie_with_shark" checked>
+                <span class="form__label-txt">Сделал селфи с акулой</span>
+              </label>
             </div>
-            <div class="slogans__wrap-item slogans__wrap-item--peace">
-              <h3 class="slogans__title-item">Меняет мир вокруг</h3>
-              <p class="slogans__title-txt">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <div class="form__group form__group--advance">
+              <label class="form__label form__label--checkbox  form__label--control-text">
+                <input type="checkbox" name="burn_on_sun" checked>
+                <span class="form__label-txt">Обгорел на пляже</span>
+              </label>
             </div>
-            <div class="slogans__wrap-item slogans__wrap-item--friends">
-              <h3 class="slogans__title-item">Заводит новых друзей</h3>
-              <p class="slogans__title-txt">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            <div class="form__group form__group--advance">
+              <label class="form__label form__label--checkbox  form__label--control-text">
+                <input type="checkbox" name="see_norris">
+                <span class="form__label-txt">Видел Чака Норриса</span>
+              </label>
             </div>
+            <div class="form__group form__group--advance">
+              <label class="form__label form__label--checkbox  form__label--control-text">
+                <input type="checkbox" name="buy_souvenirs">
+                <span class="form__label-txt">Накупил сувениров</span>
+              </label>
+            </div>
+            <div class="form__group form__group--advance">
+              <label class="form__label form__label--checkbox  form__label--control-text">
+                <input type="checkbox" name="kept_tower" checked>
+                <span class="form__label-txt">Удержал башню</span>
+              </label>
+            </div>
+            <div class="form__group form__group--advance">
+              <label class="form__label form__label--checkbox  form__label--control-text">
+                <input type="checkbox" name="break_hotel">
+                <span class="form__label-txt">Разгромил отель</span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+
+        <fieldset class="form__wrapper form__wrapper--user">
+          <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+          <div class="form__group form__group--user">
+            <label class="form__user-title" for="phone-info">Номерок телефона</label>
+            <input class="form__input-txt" type="tel" id="phone-info" name="phone-info" placeholder="Номер, пожалуйста">
           </div>
-          <span class="slogans__title-img"></span>
-        </div>
-
-      </section>
-
-      <section class="trick">
-        <div class="trick__wrap">
-          <div class="trick__img">
+          <div class="form__group form__group--user">
+            <label class="form__user-title" for="email-info">Адрес почты</label>
+            <input class="form__input-txt" type="email"  id="email-info" name="email-info" placeholder="Введите почту">
           </div>
-          <div class="trick__wrap-txt">
-            <h3 class="trick__title">Эффект на 24 часа!</h3>
-            <p>Британские ученые провели исследования
-               и доказали, что положительный эффект
-               от использования приложения длится
-               целые сутки!</p>
-            <a href="#">Узнать больше об исследовании</a>
-          </div>
-        </div>
-      </section>
+        </fieldset>
 
-      <section class="slider slider--bg-w">
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
-        <div class="slider__item">
-          <div class="slider__wrap-title">
-            <h3 class="slider__title-item">Николай Петров</h3>
-            <span class="slider__user-age">25 лет, водитель трамвая</span>
-          </div>
-          <p class="slider__txt">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </div>
-        <div class="reviews__toggles slider__toggles">
-          <label class="slider__toggle" for="reviews-input-1">1</label>
-          <label class="slider__toggle" for="reviews-input-2">2</label>
-          <label class="slider__toggle" for="reviews-input-3">3</label>
-        </div>
-      </section>
-
-      <section class="price__wrap">
-        <input class="slider__input" type="radio" name="prices" id="prices-input-1">
-        <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
-        <input class="slider__input" type="radio" name="prices" id="prices-input-3">
-
-        <div class="price">
-
-          <ul class="price__title">
-            <li class="price__title-item price__title-item--hidden"></li>
-            <li class="price__title-item">
-              <span>База<span class="price__title-item--money">1,99 USD</span></span>
-            </li>
-            <li class="price__title-item price__title-item--sticker">
-              <span>Стандарт<span class="price__title-item--money">3,99 USD</span></span>
-            </li>
-            <li class="price__title-item">
-              <span>Стандарт<span class="price__title-item--money">3,99 USD</span></span>
-            </li>
-          </ul>
-
-          <ul class="price__list">
-            <li class="price__list-item">
-              <span class="price__list-item--hidden">Розовый фильтр</span>
-            </li>
-            <li class="price__list-item price__title-item--yes">
-              <span class="price__list-item--hidden">Розовый фильтр</span>
-            </li>
-            <li class="price__list-item price__title-item--yes">
-              <span>Розовый фильтр</span>
-            </li>
-            <li class="price__list-item price__title-item--yes">
-              <span class="price__list-item--hidden">Розовый фильтр</span>
-            </li>
-          </ul>
-
-          <ul class="price__list">
-            <li class="price__list-item">
-              <span class="price__list-item--hidden">Смайлики</span>
-            </li>
-            <li class="price__list-item price__title-item--no">
-              <span class="price__list-item--hidden">Смайлики</span>
-            </li>
-            <li class="price__list-item price__title-item--yes">
-              <span>Смайлики</span>
-            </li>
-            <li class="price__list-item price__title-item--yes">
-              <span class="price__list-item--hidden">Смайлики</span>
-            </li>
-          </ul>
-
-          <ul class="price__list">
-            <li class="price__list-item">
-              <span class="price__list-item--hidden">Комментарии</span>
-            </li>
-            <li class="price__list-item price__title-item--no">
-              <span class="price__list-item--hidden">Комментарии</span>
-            </li>
-            <li class="price__list-item price__title-item--no">
-              <span>Комментарии</span>
-            </li>
-            <li class="price__list-item price__title-item--yes">
-              <span class="price__list-item--hidden">Комментарии</span>
-            </li>
-          </ul>
-
+        <div class="form__wrapper--advance-grey">
+          <fieldset class="form__wrapper form__wrapper--app">
+            <legend class="form__legend form__legend--app">С каким приложением путешествовали?</legend>
+            <div class="form__group form__group--app">
+              <label class="form__label  form__label--radio  form__label--control-text">
+                <input type="radio" name="application_type" value="iOS" checked>
+                <span class="form__label-txt">Pink для iOS</span>
+              </label>
+            </div>
+            <div class="form__group form__group--app">
+              <label class="form__label  form__label--radio  form__label--control-text">
+                <input type="radio" name="application_type" value="iOS">
+                <span class="form__label-txt">Pink на Android</span>
+              </label>
+            </div>
+            <div class="form__group form__group--app">
+              <label class="form__label  form__label--radio  form__label--control-text">
+                <input type="radio" name="application_type" value="iOS">
+                <span class="form__label-txt">Windows Phone</span>
+              </label>
+            </div>
+          </fieldset>
         </div>
 
+        <fieldset class="form__wrapper form__wrapper--tell">
+          <legend class="form__legend form__legend--tell">Ваши безбашенные достижения в путешествии</legend>
+          <textarea class="form__textarea" name="emotions" id="emotions"
+                          cols="30" rows="8"
+                          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
 
-        <div class="prices__toggles slider__toggles">
-          <label class="slider__toggle" for="prices-input-1">1</label>
-          <label class="slider__toggle" for="prices-input-2">2</label>
-          <label class="slider__toggle" for="prices-input-3">3</label>
+        <div class="form__wrapper-btn">
+          <button class="submit-btn" type="submit">Отправить форму</button>
+          <p class="form__mandatory">
+            <span class="form__mandatory-red">*</span>
+            &mdash; обязательные поля
+          </p>
         </div>
-      </section>
+      </form>
     </main>
+
+
     <footer class="main-footer">
-      <h2 class="contacts__title-ploy">Остались вопросы?<br>Свяжитесь с нами!</h2>
-      <div class="contacts">
-
-        <div class="contacts__phone">
-          <h3 class="contacts__title">Звоните:</h3>
-          <p>7 (812) 555-66-66</p>
-        </div>
-        <div class="contacts__email">
-          <h3 class="contacts__title">Пишите:</h3>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contacts__address">
-          <h3 class="contacts__title">Приезжайте в гости:</h3>
-          <p>ул. Большая Конюшенная, 19/8</p>
-        </div>
-      </div>
-      <div class="main-footer__map"></div>
-
-      <div class="main-footer__wrap">
+      <div class="main-footer__wrap  main-footer__wrap--form">
         <div class="main-footer__logo">
         </div>
 
@@ -220,8 +173,45 @@
         </div>
 
       </div>
-
     </footer>
+
+
+    <section class="pop-up pop-up--oblom" id="oblom">
+      <div class="pop-up__wrap">
+        <h3 class="pop-up__title">
+          Что-то пошло не так!
+        </h3>
+        <div class="pop-up__txt">
+          <p>
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+        </div>
+        <button class="submit-btn" type="button">Ок</button>
+      </div>
+    </section>
+
+    <section class="pop-up  pop-up--victory" id="victory">
+      <div class="pop-up__wrap">
+        <h4 class="pop-up__title">
+          Ваша заявка отправлена
+        </h4>
+        <div class="pop-up__txt">
+          <p>
+            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее
+            и оповестим вас.
+          </p>
+        </div>
+      </div>
+      <div class="pop-up__button-wrap">
+        <button class="submit-btn" type="button">Закрыть окно</button>
+      </div>
+    </section>
+
+
+
+
+
   </div>
   </body>
 </html>
+

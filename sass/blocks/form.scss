@@ -1,6 +1,22 @@
 .form {
-  margin: 20px 20px;
+  input,
+  textarea {
+    @include  placeholder-color($c-b);
+    font-size: 18px;
+  }
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+  }
 }
+
+
+fieldset {
+  padding: 0;
+}
+
 
 .form-title {
   width: 280px;
@@ -8,38 +24,39 @@
   @include font(14px, 30px);
   text-align: center;
 }
-
-legend {
-  @include font(14px, 18px);
-  text-align: center;
-  text-transform: uppercase;
-  color: $c-accent;
-}
-
-fieldset {
-  border: none;
-}
-
-label {
-   @include font(14px, 30px);
-   padding-left: 20px;
-   text-transform: uppercase;
-
-}
-
-input {
-  height: 58px;
-  padding-left: 20px;
-  border: 2px solid $c-border;
-  &::-moz-placeholder{
-    @include font(18px, 30px);
-    text-transform: uppercase;
-    color: $c-bg;
-  }
-}
-
-input[type="checkbox"] {
+.form-title-hiden {
   display: none;
+}
+
+.form {
+
+  legend {
+    @include font(14px, 18px);
+    text-align: center;
+    text-transform: uppercase;
+    color: $c-accent;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+
+
+  input {
+    height: 58px;
+    padding-left: 20px;
+    border: 2px solid $c-border;
+    &::-moz-placeholder{
+      @include font(18px, 30px);
+      text-transform: uppercase;
+      color: $c-bg;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
 }
 
 .form__wrapper {
@@ -50,12 +67,13 @@ input[type="checkbox"] {
   /*flex-direction: column;*/
     flex-wrap: wrap;
     padding-bottom: 40px;
+    margin: 20px 20px;
     .form__group--user {
       width: 100%;
-      margin: 5px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      margin-top: 15px;
       label {
         display: block;
         color: $c-accent;
@@ -69,30 +87,192 @@ input[type="checkbox"] {
   }
 }
 
-.form__legend--progress {
-  width: 220px;
+.form__user-title {
+  @include font(14px, 30px);
+  padding-left: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.form__wrapper--app-grey,
+.form__wrapper--advance-grey {
+  width: 100%;
+  background-color: $c-grey;
+  padding-top: 35px;
 }
 
 
-  .form__feat-title {
-    span {
-      display: block;
-      padding-left: 70px;
-    }
+.form__legend {
+  margin-bottom: 40px;
+  width: 235px;
+}
 
-  span::before {
-    content: "";
-    display: inline-block;
-    /*position: absolute;
+.form__group--app,
+.form__group--advance {
+   margin: 0 0 38px;
+}
+.form__wrapper--app,
+.form__wrapper--advance,
+.form__wrapper--tell {
+  margin: 0 20px;
+}
+
+.form__label-txt {
+  @include font(18px, 30px);
+  text-transform: none;
+  color: $c-bg;
+  }
+
+.form label.form__label--checkbox {
+  position: relative;
+  padding-left: 68px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+
+  & input[type="checkbox"] {
+    position: absolute;
     left: 0;
-    top: 3px; */
-    width: 35px;
-    height: 35px;
-    border: 2px solid $c-border;
-    background-color: $c-w;;
+    top: 0;
+    display: none;
+
+    & + span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: 35px;
+      height: 35px;
+      border: 2px solid $c-grey;
+      background-color: $c-w;
+      margin-right: 35px;
+    }
+    &:checked + span::before {
+      background: $c-w url(../img/icon-yes.svg) center center no-repeat;
+    }
 
   }
 }
+
+.form__legend--contacts {
+  display: none;
+}
+
+
+.form label.form__label--radio {
+  position: relative;
+  padding-left: 68px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  & input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+
+    & + span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: 2px solid #e9ebec;
+      background-color: #fff;
+    }
+    &:checked + span::before {
+      background: $c-w url(../img/icon-map-marker.svg) center center no-repeat;
+    }
+
+  }
+}
+
+.form__wrapper--tell {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.form__textarea {
+  border: 2px solid #e5e5e5;
+  padding: 20px;
+}
+
+.pop-up {
+  width: 320px;
+  /*height: 290px; */
+  margin: 0 auto 30px;
+  padding-bottom: 10px;
+  box-shadow: 0 7px 25px rgba($c-b, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pop-up__title {
+   @include font(18px, 24px);
+   text-align: center;
+   color: $c-b;
+   margin: 30px auto 30px auto;
+}
+.pop-up__txt {
+  width: 280px;
+  @include font(14px, 24px);
+   text-align: center;
+   color: $c-bg;
+}
+
+
+
+
+
+
+.form__wrapper-btn {
+  width: 100%;
+}
+.submit-btn {
+  display: block;
+  margin: 40px auto 40px auto;
+  padding: 15px;
+  width: 280px;
+  @include font(18px, 30px);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $c-w;
+  background-color: $c-btn;
+  border-color: $c-btn;
+  border-radius: 5px;
+}
+
+.form__mandatory {
+  @include font(14px, 30px);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  &-red {
+    color: $c-accent;
+  }
+
+}
+
+@media ($tablet-widths) {
+  .form-title {
+    width: 500px;
+    margin: 100px auto auto auto;
+    @include font(18px, 30px);
+  }
+  .form-title-hiden {
+    display: block;
+}
+
+
+}
+
+
 
 
 
