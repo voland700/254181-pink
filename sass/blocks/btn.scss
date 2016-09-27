@@ -1,0 +1,11 @@
+.btn {
+  display: block;
+  padding: 15px;
+  @include font(18px, 30px);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $c-w;
+  background-color: $c-btn;
+  border-color: $c-btn;
+  border-radius: 5px;
+}

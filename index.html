@@ -58,7 +58,7 @@
           </div>
         </div>
 
-        <div class="form__wrapper--advance-grey">
+        <div class="form__wrapper-advance-grey">
           <fieldset class="form__wrapper form__wrapper--advance">
             <legend class="form__legend form__legend--advance">Ваши безбашенные достижения в путешествии</legend>
 
@@ -102,19 +102,19 @@
         </div>
 
 
-        <fieldset class="form__wrapper form__wrapper--user">
-          <legend class="form__legend form__legend--contacts">Контактная информация</legend>
-          <div class="form__group form__group--user">
+        <fieldset class="form__wrapper form__wrapper--contact">
+          <legend class="form__legend form__legend--contact">Контактная информация</legend>
+          <div class="form__group form__group--contact">
             <label class="form__user-title" for="phone-info">Номерок телефона</label>
-            <input class="form__input-txt" type="tel" id="phone-info" name="phone-info" placeholder="Номер, пожалуйста">
+            <input class="form__input-txt form__input-txt--phone" type="tel" id="phone-info" name="phone-info" placeholder="Номер, пожалуйста">
           </div>
-          <div class="form__group form__group--user">
+          <div class="form__group form__group--contact">
             <label class="form__user-title" for="email-info">Адрес почты</label>
-            <input class="form__input-txt" type="email"  id="email-info" name="email-info" placeholder="Введите почту">
+            <input class="form__input-txt form__input-txt--email" type="email"  id="email-info" name="email-info" placeholder="Введите почту">
           </div>
         </fieldset>
 
-        <div class="form__wrapper--advance-grey">
+        <div class="form__wrapper-app-grey">
           <fieldset class="form__wrapper form__wrapper--app">
             <legend class="form__legend form__legend--app">С каким приложением путешествовали?</legend>
             <div class="form__group form__group--app">
@@ -146,7 +146,7 @@
         </fieldset>
 
         <div class="form__wrapper-btn">
-          <button class="submit-btn" type="submit">Отправить форму</button>
+          <button class="btn btn__form" type="submit">Отправить форму</button>
           <p class="form__mandatory">
             <span class="form__mandatory-red">*</span>
             &mdash; обязательные поля
@@ -157,7 +157,7 @@
 
 
     <footer class="main-footer">
-      <div class="main-footer__wrap  main-footer__wrap--form">
+      <div class="main-footer__wrap main-footer__wrap--form">
         <div class="main-footer__logo">
         </div>
 
@@ -186,7 +186,9 @@
             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
         </div>
-        <button class="submit-btn" type="button">Ок</button>
+        <div class="pop-up__button-wrap">
+          <button class="btn btn_pop-up" type="button">Ок</button>
+        </div>
       </div>
     </section>
 
@@ -203,7 +205,7 @@
         </div>
       </div>
       <div class="pop-up__button-wrap">
-        <button class="submit-btn" type="button">Закрыть окно</button>
+        <button class="btn btn_pop-up" type="button">Закрыть окно</button>
       </div>
     </section>
 
