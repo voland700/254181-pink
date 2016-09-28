@@ -36,9 +36,9 @@ fieldset {
     text-transform: uppercase;
     color: $c-accent;
   }
-
   fieldset {
     border: none;
+    padding-top: 25px;
   }
 
 
@@ -202,7 +202,6 @@ fieldset {
     &:checked + span::before {
       background: $c-w url(../img/icon-map-marker.svg) center center no-repeat;
     }
-
   }
 }
 
@@ -237,7 +236,6 @@ fieldset {
 
 
 @media ($tablet-widths) {
-
   .form {
     display: flex;
     flex-direction: column;
@@ -311,7 +309,6 @@ fieldset {
 
   .form__wrapper--advance {
     border: 2px solid $c-border;
-
   }
 
   .form label.form__label--checkbox {
@@ -372,13 +369,6 @@ fieldset {
     }
   }
 
-  .form__input-txt--phone,
-  .form__input-txt--email {
-
-  }
-
-
-
   .form label.form__label--radio {
     & input[type="radio"] {
       & + span::before {
@@ -428,7 +418,8 @@ fieldset {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+    }
+
   .form-title {
     width: 770px;
     .form-title-hiden {
@@ -439,6 +430,7 @@ fieldset {
   .form__wrapper {
     width: auto;
     margin: 0;
+    padding: 0;
   }
 
   .form__wrapper--user {
@@ -453,19 +445,23 @@ fieldset {
     justify-content: space-between;
     align-items: center;
     width: 940px;
-
   }
 
-
+  .form__group--user {
+    margin-bottom: 30px;
+  }
 
   .form__wrapper--contact {
-
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     order: 15;
   }
 
   .form__group--contact {
     label {
-      margin-left: 80px;
+      margin: 3px 0 0 80px;
       padding-left: 0;
     }
 
@@ -481,23 +477,74 @@ fieldset {
     flex-basis: 434px;
     order: 5;
   }
+  .form__wrapper--app {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  .form__wrapper-fieldset-app {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 100%;
+  }
+  .form__group--app{
+    margin-bottom: 45px;
+  }
+
+
 
   .form__wrapper--user {
     //flex-basis: 50%;
     order: 5;
   }
-  .form__wrapper--advance {
+
+  .form__wrapper-advance-grey {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+ .form__wrapper--advance {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .form__wrapper-fieldset-advance {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .form__group--advance {
-    flex-basis: 40%;
+    flex-basis: 260px;
 
   }
 
+  .form label.form__label--checkbox {
+    position: relative;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    & input[type="checkbox"] {
+      & + span::before {
+        content: "";
+        margin-left: 12px;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .form__wrapper--tell {
+    flex-basis: 100%;
+    padding: 33px 60px 50px 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  textarea.form__textarea {
+    width: 100%;
+  }
 
 
 
