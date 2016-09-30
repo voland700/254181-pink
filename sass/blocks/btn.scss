@@ -1,0 +1,26 @@
+.btn {
+  display: block;
+  padding: 15px;
+  @include font(18px, 30px);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $c-w;
+  background-color: $c-btn;
+  border-color: $c-btn;
+  border-radius: 5px;
+}
+
+.batton {
+  display: block;
+  @include font(18px, 18px);
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  border-radius: 30px;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+

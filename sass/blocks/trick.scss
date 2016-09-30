@@ -1,0 +1,86 @@
+.trick {
+    display: none;
+  }
+
+
+@media ($tablet-widths) {
+  .trick {
+    display: block;
+    width: 100%;
+  }
+
+  .trick__wrap {
+    display: flex;
+    align-items: center;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .trick__img {
+    display: block;
+    width: 50%;
+  }
+
+  .trick__wrap-txt {
+    width: 50%;
+    p {
+      @include font(14px, 24px);
+    }
+    a{
+      @include font(14px, 24px);
+      color: $c-accent;
+      text-decoration: underline;
+    }
+  }
+
+  .trick__title{
+    width: 200px;
+    @include font(30px, 36px);
+    font-weight: bold;
+    color: $c-b;
+  }
+}
+
+@media ($desktop-widths) {
+  .trick {
+    background-color: $c-grey;
+    height: 350px; /*Временно */
+  }
+  .trick__wrap {
+    display: flex;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .trick__img {
+    display: block;
+    width: 40%;
+    height: 100%;
+  }
+
+  .trick__wrap-txt {
+    width: 60%;
+    p {
+      @include font(18px, 30px);
+    }
+    a{
+      @include font(18px, 30px);
+    }
+  }
+
+  .trick__title{
+    width: 300px;
+    @include font(30px, 30px);
+  }
+
+
+
+
+
+
+
+
+
+
+}

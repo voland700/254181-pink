@@ -8,6 +8,16 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.slider__title-item{
+  @include font(18px, 24px);
+  font-weight: bold;
+  color: $c-b;
+  z-index: 5;
+  text-align: center;
+  margin-top: 40px;
+}
+
 .slider__txt{
   @include font(14px, 30px);
   font-weight: normal;
@@ -15,51 +25,13 @@
   text-align: center;
 }
 
-.slider--bg-g {
-  background-color: $c-grey;
-}
-
-.slider__price{
-  width: 100%;
-}
-
-.slider__price {
-  border-color: $c-border;
-  td {
-    background-color: $c-w;
-  }
-}
-
-.slider__price-title{
-  background-color: $c-bg;
-  text-align: center;
-}
-
-.slider__price-name--sticker {
-  @include font(18px, 30px);
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $c-w;
-  span {
-    @include font(24px, 30px);
-    font-weight: normal;
-  }
-}
-
-.slider__price-name--yes,
-.slider__price-name--no {
-  @include font(14px, 30px);
-  font-weight: normal;
-  text-transform: uppercase;
-  color: $c-bg;
-}
-
-.slider__toggles {
-  font-size: 0;
+.slider__user-age {
+  display: none;
 }
 
 .slider__toggle {
   display: inline-block;
+  font-size: 0;
   vertical-align: top;
   margin-right: 19px;
   @include size(6px, 6px);
@@ -74,14 +46,60 @@
   display: none;
 }
 
-
-
 @include toggle(reviews-input-1);
 @include toggle(reviews-input-2);
 @include toggle(reviews-input-3);
 
-@include toggle(prices-input-1);
-@include toggle(prices-input-2);
-@include toggle(prices-input-3);
+
+
+@media ($tablet-widths) {
+  .slider {
+  width: 100%;
+}
+
+.slider--bg-w {
+  padding: 0;
+}
+
+  .slider__item {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .slider__user-age {
+    display: block;
+  }
+
+  .slider__title-item{
+    @include font(20px, 30px);
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .slider__txt{
+    @include font(18px, 30px);
+  }
+}
+
+@media ($desktop-widths) {
+
+  .slider__item {
+    width: 940px;
+
+  }
+  .slider__title-item{
+    @include font(24px, 30px);
+  }
+
+  .slider__txt{
+    width: 700px;
+    margin: 20px auto;
+  }
+
+}
 
 

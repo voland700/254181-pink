@@ -42,9 +42,6 @@
   }
 }
 
-.main-nav {
-
-}
 
 .main-nav__list{
   padding: 0;
@@ -67,7 +64,147 @@
   padding-bottom: 12px;
 }
 
-.download-img{
-  height: 395px;
-  background: url("../img/iphone-hand-mobile@1x.png") 0 100% no-repeat,  url("../img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
+.picture {
+  display: flex;
+  width: 100%;
+  height: 238px;
+  background: url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
 }
+
+.picture__wrap {
+  width: 250px;
+  margin: auto;
+}
+
+.picture__title {
+  display: block;
+  @include font(24px, 26px);
+  font-weight: lighter;
+  color: $c-w;
+  text-align: center;
+
+}
+
+@media ($tablet-widths) {
+  .picture {
+  height: 445px;
+  }
+
+.picture__wrap {
+  width: 500px;
+  margin: auto;
+  }
+
+.picture__title {
+  @include font(50px, 50px);
+  }
+}
+
+
+
+
+
+@media ($tablet-widths) {
+  .logo{
+  padding-left: 40px;
+  background: url("../img/logo-pink-white-mobile.svg") 50% 50% no-repeat;
+  }
+  .main-header__btn {
+  margin: 20px 40px;
+  &--open {
+    background: url("../img/icon-menu-cross.svg") 50% 50% no-repeat;
+  }
+  &--close {
+    background: url("../img/icon-menu-burger.svg") 50% 50% no-repeat;
+    }
+  }
+
+  .picture {
+    height: 620px;
+    background-size: cover; /*Временно*/
+  }
+
+  .picture__wrap {
+    width: 500px;
+  }
+
+  .picture__title {
+    @include font(50px, 50px);
+  }
+
+}
+
+
+@media ($desktop-widths) {
+  .main-header {
+    position: absolute;
+    background-color: rgba($c-bg, 0.3);
+    width: 100%;
+    height: 110px;
+    z-index: 5;
+  }
+
+  .main-header__wrap {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .logo{
+  width: 147px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  background: url("../img/logo-pink-white-mobile.svg") 50% 50% no-repeat;
+  }
+
+  .main-header__title--menu-close {
+    display: none;
+  }
+  .main-header__title--menu-open {
+    border: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      display: inline-block;
+      border: none;
+      padding: 20px;
+      white-space: nowrap;
+    }
+  }
+
+
+  .main-header__btn {
+    &--open {
+    display: none;
+  }
+    &--close {
+      display: none;
+      }
+  }
+
+  .main-header__title {
+    width: 940px;
+  }
+
+  .picture {
+    top: -110px;
+    left: 0;
+    background: url("../img/bg-back-descktop@-delet.jpg") 0 100% no-repeat;
+    height: 400px;
+    background-size: cover; /*Временно*/
+  }
+
+  .picture__wrap {
+    width: 800px;
+  }
+
+}
+
+
