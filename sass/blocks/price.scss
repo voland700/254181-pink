@@ -1,7 +1,13 @@
 .price__wrap {
   width: 100%;
   background-color: $c-grey;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: cover;
   padding-top: 65px;
+
 }
 
 .price {
