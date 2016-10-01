@@ -16,6 +16,10 @@
   height: $height;
 }
 
+@function px2rem($value) {
+  @return ($value / $base-font-size) * 1rem;
+}
+
 @mixin toggle($id) {
   ##{$id}:checked ~ .slider__toggles .slider__toggle[for='#{$id}'] {
     background-color: $c-w;
