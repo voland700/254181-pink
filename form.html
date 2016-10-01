@@ -8,26 +8,20 @@
   </head>
   <body>
   <div class="wrapper">
-    <header class="main-header">
-      <div class="main-header__wrap">
-        <div class="main-header__title main-header__title--menu-open">
-          <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
-          <button class="main-header__btn main-header__btn--open" type="button" name="menu-open">
-          </button>
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li><a href="index.html" class="main-nav_item main-nav_item--active" >Главная</a></li>
-            <li><a href="photo.html" class="main-nav_item">Фотографии</a></li>
-            <li><a href="form.html" class="main-nav_item">Конкурс</a></li>
-            <li><a href="#" class="main-nav_item">HMTL Academy</a></li>
+    <header class="page-header  page-header--nojs">
+      <div class="page-header__wrap">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink">
+        </a>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть закрыть меню</button>
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--active"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
         </nav>
-        <div class="main-header__title main-header__title--menu-close">
-          <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
-          <button class="main-header__btn main-header__btn--close" type="button" name="menu-closed">
-          </button>
-        </div>
       </div>
     </header>
     <section class="picture">

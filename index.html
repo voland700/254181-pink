@@ -7,29 +7,39 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <svg style="display: none">
+      <symbol id="icon-review-arrow-left" viewBox="0 0 21.706 41.719">
+        <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+      </symbol>
+      <symbol id="icon-review-arrow-right" viewBox="0 0 21.706 41.719">
+        <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+      </symbol>
+      <symbol id="icon-yes" viewBox="-82.357 4.875 21.698 16.09">
+        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+      </symbol>
+      <symbol id="icon-no" viewBox="0 0 26.752 26.752">
+        <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+      </symbol>
+    </svg>
   <div class="wrapper">
-    <header class="main-header">
-      <div class="main-header__wrap">
-        <div class="main-header__title main-header__title--menu-open">
-          <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
-          <button class="main-header__btn main-header__btn--open" type="button" name="menu-open">
-          </button>
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li><a href="index.html" class="main-nav_item main-nav_item--active" >Главная</a></li>
-            <li><a href="photo.html" class="main-nav_item">Фотографии</a></li>
-            <li><a href="form.html" class="main-nav_item">Конкурс</a></li>
-            <li><a href="#" class="main-nav_item">HMTL Academy</a></li>
+
+    <header class="page-header  page-header--nojs">
+      <div class="page-header__wrap">
+        <a class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink">
+        </a>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть закрыть меню</button>
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
         </nav>
-        <div class="main-header__title main-header__title--menu-close">
-          <a href="/" class="logo"></a>     <!-- class="page-header__logo-img" -->
-          <button class="main-header__btn main-header__btn--close" type="button" name="menu-closed">
-          </button>
-        </div>
       </div>
     </header>
+
       <section class="download">
         <div class="download__wrap">
           <div class="download-hand">
@@ -134,14 +144,29 @@
             <li class="price__list-item">
               <span class="price__list-item--hidden">Розовый фильтр</span>
             </li>
-            <li class="price__list-item price__title-item--yes">
+            <li class="price__list-item">
               <span class="price__list-item--hidden">Розовый фильтр</span>
+              <span class="price__marker  price__marker--yes">
+                <svg width="31" height="21">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
-            <li class="price__list-item price__title-item--yes">
+            <li class="price__list-item">
               <span>Розовый фильтр</span>
+              <span class="price__marker  price__marker--yes">
+                <svg width="31" height="21">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
-            <li class="price__list-item price__title-item--yes">
+            <li class="price__list-item">
               <span class="price__list-item--hidden">Розовый фильтр</span>
+              <span class="price__marker  price__marker--yes">
+                <svg width="31" height="21">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
           </ul>
 
@@ -149,14 +174,29 @@
             <li class="price__list-item">
               <span class="price__list-item--hidden">Смайлики</span>
             </li>
-            <li class="price__list-item price__title-item--no">
+            <li class="price__list-item">
               <span class="price__list-item--hidden">Смайлики</span>
+              <span class="price__marker  price__marker--no">
+                <svg width="27" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+                </svg>
+              </span>
             </li>
-            <li class="price__list-item price__title-item--yes">
+            <li class="price__list-item">
               <span>Смайлики</span>
+              <span class="price__marker  price__marker--yes">
+                <svg width="31" height="21">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
-            <li class="price__list-item price__title-item--yes">
+            <li class="price__list-item">
               <span class="price__list-item--hidden">Смайлики</span>
+              <span class="price__marker  price__marker--yes">
+                <svg width="31" height="21">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
           </ul>
 
@@ -164,14 +204,29 @@
             <li class="price__list-item">
               <span class="price__list-item--hidden">Комментарии</span>
             </li>
-            <li class="price__list-item price__title-item--no">
+            <li class="price__list-item">
               <span class="price__list-item--hidden">Комментарии</span>
+              <span class="price__marker  price__marker--no">
+                <svg width="27" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+                </svg>
+              </span>
             </li>
-            <li class="price__list-item price__title-item--no">
+            <li class="price__list-item">
+              <span class="price__marker  price__marker--no">
+                <svg width="27" height="26">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
+                </svg>
+              </span>
               <span>Комментарии</span>
             </li>
-            <li class="price__list-item price__title-item--yes">
+            <li class="price__list-item">
               <span class="price__list-item--hidden">Комментарии</span>
+              <span class="price__marker  price__marker--yes">
+                <svg width="31" height="21">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
           </ul>
 
@@ -226,5 +281,6 @@
 
     </footer>
   </div>
+  <script src="js/common.js"></script>
   </body>
 </html>
