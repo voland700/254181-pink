@@ -31,19 +31,49 @@
 
 
 li:nth-child(1).price__title-item,
-li:nth-child(1).price__list-item {
+li:nth-child(1).price__list-item,
+{
   display: none;
 }
 
 li:nth-child(2).price__title-item span,
-li:nth-child(2).price__list-item span {
+li:nth-child(2).price__list-item .price__list-item--hidden,
+li:nth-child(2).price__list-item .price__marker {
   display: none;
 }
 
+li:nth-child(3).price__list-item .price__marker {
+  display: block;
+}
+
 li:nth-child(4).price__title-item span,
-li:nth-child(4).price__list-item span {
+li:nth-child(4).price__list-item .price__list-item--hidden,
+li:nth-child(4).price__list-item .price__marker {
   display: none;
 }
+
+.price__title-item--sticker {
+  background-image: url(../img/bg-hit.svg);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  position: relative;
+  &::before {
+    content: "Хит";
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 6;
+    @include font(14px, 30px);
+    text-transform: uppercase;
+    color: $c-w;
+    transform: rotate(-45deg);
+  }
+}
+
+
+
+
 /*Временно, для моб.версии - end*/
 
 
@@ -83,6 +113,17 @@ li:nth-child(4).price__list-item span {
   text-align: center;
 }
 
+.price__marker {
+  float: right;
+  margin-right: 15px;
+   &--yes {
+    fill: $c-ig;
+  }
+  &--no {
+    fill: $c-ir;
+  }
+}
+
 @include toggle(prices-input-1);
 @include toggle(prices-input-2);
 @include toggle(prices-input-3);
@@ -110,12 +151,29 @@ li:nth-child(4).price__list-item span {
     display: table-cell;
   }
 
+  li:not(:nth-child(1)).price__list-item {
+    padding: 0;
+    text-align: center;
+  }
+
   li:nth-child(3).price__list-item span {
     display: none;
   }
   li:nth-child(2).price__title-item span,
   li:nth-child(4).price__title-item span  {
     display: block;
+  }
+
+  li:nth-child(2).price__list-item .price__marker,
+  li:nth-child(3).price__list-item .price__marker,
+  li:nth-child(4).price__list-item .price__marker {
+    display: block;
+  }
+
+  .price__marker {
+    display: block;
+    float: none;
+    margin: 0 auto;
   }
 
 }
