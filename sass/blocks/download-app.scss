@@ -7,6 +7,10 @@
 
 .download-hand {
   background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat, url("../img/bg-back-mobile@1x.jpg") 0 100% no-repeat;
+ /* @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/iphone-hand-mobile@2x.png") 50% 100% no-repeat, url("../img/bg-back-mobile@2x.jpg") 0 100% no-repeat;
+
+    }*/
   height: 460px;
 
 }
@@ -70,6 +74,7 @@
     height: 650px;
     background: url("../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat, url("../img/bg-back-mobile@delet.jpg") 0 100% no-repeat;
   }
+
   .download__wrap {
   display: flex;
   flex-direction: row;
