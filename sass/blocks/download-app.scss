@@ -24,9 +24,6 @@
   }
 }
 
-
-
-
 .download-app {
   background-color: $c-bg;
   padding: 30px 20px;
@@ -37,14 +34,20 @@
   color: $c-w;
   width: 285px;
   border: 3px solid $c-w;
+  &:hover {
+    background-color: $c-w;
+    color: $c-accent;
+    transition: .3s
+  }
+  &:active {
+    background-color: $c-w;
+    color: rgba($c-accent, 0.3);
+    transition: .2s
+  }
 }
 
 .download-app__title{
   display: none;
-}
-
-.download-app__title-form {
-
 }
 
 .download-app__txt {
@@ -100,7 +103,7 @@
   width: 700px;
   height: 100%;
   background: url("../img/iphone-hand-tablet@1x.png") 0 100% no-repeat;
-    }
+  }
 
   .download-hand {
     display: none;
@@ -155,7 +158,6 @@
       background-image: url("../img/iphone-hand-desktop@2x.png");
       background-size: 1050px;
     }
-
   }
 
 .download-app__txt{
