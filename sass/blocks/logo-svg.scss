@@ -1,3 +1,5 @@
+#logo-svg-footer-tablet,
+#logo-svg-footer-desktop,
 #logo-svg-mobile,
 #logo-svg-tablet,
 #logo-svg-desktop {
@@ -18,6 +20,12 @@
   display: none;
 }
 
+
+#logo-svg-footer-desktop {
+  display: none;
+}
+
+
 @media ($tablet-widths) {
   #logo-svg-mobile,
   #logo-svg-desktop {
@@ -36,5 +44,10 @@
   #logo-svg-desktop {
     display: block;
   }
-
+  #logo-svg-footer-tablet {
+    display: none;
+  }
+  #logo-svg-footer-desktop {
+    display: block;
+}
 }

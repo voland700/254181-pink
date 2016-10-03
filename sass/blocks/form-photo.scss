@@ -143,14 +143,36 @@ input[type="radio"] {
   left: 80%;
 }
 .scale-slider__point {
-  position: absolute;
-  top: -6px;
-  left: 75%;
-  width: 10px;
-  height: 10px;
-  background-color: $c-w;
-  border: 2px solid $c-accent;
-  border-radius: 50%;
+  &--crop {
+    position: absolute;
+    top: -6px;
+    left: 75%;
+    width: 10px;
+    height: 10px;
+    background-color: $c-w;
+    border: 2px solid $c-accent;
+    border-radius: 50%;
+  }
+  &--brightness {
+    position: absolute;
+    top: -6px;
+    left: 15%;
+    width: 10px;
+    height: 10px;
+    background-color: $c-w;
+    border: 2px solid $c-accent;
+    border-radius: 50%;
+  }
+  &--contrast {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: $c-w;
+    border: 2px solid $c-accent;
+    border-radius: 50%;
+  }
   &:hover {
     background-color: $c-accent;
     }

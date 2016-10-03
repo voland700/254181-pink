@@ -1,5 +1,7 @@
 .main-footer{
    background-color: $c-w;
+   height:  245px;
+   padding-top: 40px; /*-правка photo.html */
 }
 
 .contacts {
@@ -69,21 +71,18 @@
   display: none;
 }
 
-
-
 .main-footer__wrap--form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 200px;
+    height: 100%;
     margin: 0 auto;
 
 
   .main-footer__logo {
     width: 147px;
     height: 40px;
-    background: url("../img/logo-pink-blue-mobile.svg") 50% 50% no-repeat;
   }
 
   .main-footer__social {
@@ -100,6 +99,13 @@
     height: 45px;
     border: solid 3px  rgba($c-bg, .1);
     border-radius: 50%;
+    &:hover {
+      border-color: $c-bg;
+      transition: .3s;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-footer__social-fb {
@@ -162,7 +168,11 @@
   }
 
   .main-footer__map {
-  height: 380px;
+    height: 380px;
+  }
+  .main-footer{
+    padding-top: 0;
+    height:  128px;
   }
 
   .main-footer__wrap {
@@ -170,14 +180,19 @@
     justify-content: space-between;
     align-items: center;
     width: 620px;
-    height: 128px;
+    height: 100%;
     margin: 0 auto;
+  }
+
+  .main-footer__wrap--form {
+    display: flex;
+    flex-direction: row;
+    width: 620px;
   }
 
   .main-footer__logo {
     width: 147px;
     height: 40px;
-    background: url("../img/logo-pink-blue-mobile.svg") 50% 50% no-repeat;
   }
 
   .main-footer__social {
@@ -220,68 +235,74 @@
   .main-footer__academy {
     width: 27px;
     height: 34px;
-    background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
+    svg {
+      cursor: auto;
+      path {
+        fill: $c-accent;
+      }
+      &:hover{
+      path {
+        fill: $c-bg;
+        transition: .3s;
+        }
+      }
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
-
-  .main-footer__wrap--form {
-    display: flex;
-    flex-direction: row;
-    width: 620px;
-
-  }
-
 }
 
 @media ($desktop-widths) {
   .contacts {
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      width: 940px;
-      margin: 20px auto;
-    }
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 20px auto;
+  }
 
-    .contacts__title-ploy {
-      @include font(50px, 50px);
-      margin-top: 60px;
-    }
+  .contacts__title-ploy {
+    @include font(50px, 50px);
+    margin-top: 60px;
+  }
 
-    .contacts__email {
-      order: 15;
-      width: auto;
+  .contacts__email {
+    order: 15;
+    width: auto;
+  }
 
-    }
-
-    .contacts__address {
-      order: 10;
-      width: auto;
-      p {
-        width: 220px;
-        margin: 0 auto;
-      }
-    }
-
-    .contacts__phone {
-      order: 1;
-      width: auto;
-    }
-
-
-    .main-footer__map {
-      height: 505px;
-    }
-
-    .main-footer__wrap {
-      width: 940px;
-      height: 200px;
+  .contacts__address {
+    order: 10;
+    width: auto;
+    p {
+      width: 220px;
       margin: 0 auto;
     }
-    .main-footer__copyright {
-      width: 150px;
-      height: 35px;
-      p {
-        @include font(18px, 18px);
-      }
+  }
+
+  .contacts__phone {
+    order: 1;
+    width: auto;
+  }
+
+
+  .main-footer__map {
+    height: 505px;
+  }
+
+  .main-footer{
+  height:  226px;
+  }
+  .main-footer__wrap {
+    width: 940px;
+  }
+  .main-footer__copyright {
+    width: 150px;
+    height: 35px;
+    p {
+      @include font(18px, 18px);
     }
+  }
 
 }
 
