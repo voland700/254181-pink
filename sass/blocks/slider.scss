@@ -41,7 +41,7 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
+.slider__arrow,
 .slider__input {
   display: none;
 }
@@ -94,6 +94,7 @@
     position: relative;
     width: 940px;
     padding-top: 180px;
+    padding-bottom: 50px;
 
   }
   .slider__title-item{
@@ -123,6 +124,9 @@
     &:active {
       fill: rgba($c-bg, 0.1);
     }
+  }
+  .slider__toggles {
+    display: none;
   }
 
 }

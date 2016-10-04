@@ -18,7 +18,12 @@
   background-origin: padding-box;
   background-size: cover;
   overflow: hidden;
-  padding: 20px 55px 0 55px;
+  //padding: 20px 55px 0 55px;
+}
+
+.slogans__title-fool {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .slogans__offer-title {
@@ -78,6 +83,8 @@
   .slogans__title-fool {
     width: 620px;
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     flex-direction: row;
   }
