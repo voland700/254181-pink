@@ -46,6 +46,13 @@
       @include font(14px, 24px);
       color: $c-accent;
       text-decoration: underline;
+      &:hover {
+      color: $c-bg;
+      }
+      &:active {
+      color: $c-bg;
+      opacity: .3;
+      }
     }
   }
 
@@ -60,12 +67,13 @@
 @media ($desktop-widths) {
   .trick {
     background-color: $c-grey;
-    height: 350px; /*Временно */
   }
+
   .trick__wrap {
     display: flex;
     align-items: center;
     width: 940px;
+    height: 420px;
     margin: 0 auto;
   }
 
@@ -87,6 +95,7 @@
 
   .trick__title{
     width: 300px;
+    margin-top: 10px;
     @include font(30px, 30px);
   }
 

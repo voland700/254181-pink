@@ -86,9 +86,14 @@
 }
 
 @media ($desktop-widths) {
+  .slider--bg-w {
+    background: url(../img/icon-quotes.svg) no-repeat 50% 72px;
+  }
 
   .slider__item {
+    position: relative;
     width: 940px;
+    padding-top: 180px;
 
   }
   .slider__title-item{
@@ -100,6 +105,24 @@
     margin: 20px auto;
   }
 
+  .slider__arrow {
+    position: absolute;
+    display: block;
+    @include size(22px, 43px);
+    bottom: 160px;
+    fill: rgba($c-bg, 0.3);
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0;
+    }
+    &:hover {
+      fill: rgba($c-bg, 0.6);
+    }
+    &:active {
+      fill: rgba($c-bg, 0.1);
+    }
+  }
+
 }
-
-
