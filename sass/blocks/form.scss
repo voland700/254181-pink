@@ -3,6 +3,12 @@
   textarea {
     @include  placeholder-color($c-b);
     font-size: 18px;
+    &:hover {
+      border-color: $c-bg;
+    }
+    &:focus {
+      border-color: $c-accent;
+    }
   }
   textarea {
     width: 100%;
@@ -115,7 +121,6 @@ fieldset {
 
 
 .form__legend {
-  //margin-bottom: 40px;
   width: 235px;
 }
 
@@ -163,12 +168,17 @@ fieldset {
       background-color: $c-w;
       margin-right: 35px;
     }
+    & + span:hover::before {
+       border-color: $c-bg;
+       cursor: pointer;
+    }
     &:checked + span::before {
       background: $c-w url(../img/icon-yes.svg) center center no-repeat;
+      border-color: $c-bg;
     }
-
   }
 }
+
 
 .form__legend--contacts {
   display: none;
@@ -546,18 +556,4 @@ fieldset {
     width: 100%;
   }
 
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
