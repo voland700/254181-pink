@@ -93,7 +93,7 @@
 }
 
 
-@media #{$tablet-widths} {
+@media ($tablet-widths) {
   .main-nav__toggle {
     top: -66px;
     right: 40px;
@@ -125,7 +125,7 @@
   }
 
   .main-nav__item a {
-    padding: 5px 0;
+    padding: 10px 0;
     text-transform: capitalize;
     background-color: transparent;
     box-shadow: none;
@@ -149,8 +149,11 @@
   }
 }
 
-@media #{$desktop-widths} {
+@media ($desktop-widths) {
   .main-nav__item:not(:last-child) {
     margin-right: 80px;
+  }
+  .main-nav__item a {
+    font-weight: 400;
   }
 }

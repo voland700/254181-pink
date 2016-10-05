@@ -8,8 +8,10 @@
     }
     &:focus {
       border-color: $c-accent;
+      outline: none;
     }
   }
+
   textarea {
     width: 100%;
     box-sizing: border-box;
@@ -17,7 +19,6 @@
     outline: none;
   }
 }
-
 
 fieldset {
   padding: 0;
@@ -46,8 +47,6 @@ fieldset {
     border: none;
     padding-top: 25px;
   }
-
-
 
   input {
     height: 58px;
@@ -97,7 +96,6 @@ fieldset {
 }
 
 
-
 .form__user-title {
   @include font(14px, 30px);
   padding-left: 20px;
@@ -110,7 +108,6 @@ fieldset {
   background-color: $c-grey;
   padding-top: 35px;
 }
-
 
 
 .form__wrapper-advance-grey {
@@ -172,6 +169,10 @@ fieldset {
        border-color: $c-bg;
        cursor: pointer;
     }
+    & + span:active::before {
+       border-color: $c-accent;
+       cursor: pointer;
+    }
     &:checked + span::before {
       background: $c-w url(../img/icon-yes.svg) center center no-repeat;
       border-color: $c-bg;
@@ -209,8 +210,17 @@ fieldset {
       border: 2px solid #e9ebec;
       background-color: #fff;
     }
+      & + span:hover::before {
+         border-color: $c-bg;
+         cursor: pointer;
+      }
+      & + span:active::before {
+         border-color: $c-accent;
+         cursor: pointer;
+      }
     &:checked + span::before {
       background: $c-w url(../img/icon-map-marker.svg) center center no-repeat;
+      border-color: $c-bg;
     }
   }
 }
@@ -335,8 +345,6 @@ fieldset {
         top: 3px;
         width: 40px;
         height: 40px;
-       /* border: 2px solid $c-grey;
-        background-color: $c-w; */
         margin-left: 60px;
         margin-right: 40px;
       }
@@ -375,7 +383,16 @@ fieldset {
     input {
       width: 500px;
       margin: 0 auto 5px auto;
-      background: linear-gradient(270deg, $c-grey 60px, #fff 60px);
+    }
+    .form__input-txt--phone {
+      background-image: url(../img/icon-phone.svg), linear-gradient(270deg, $c-grey 60px, #fff 60px);
+      background-repeat: no-repeat, no-repeat;
+      background-position: right 19px top 20px, 0 0;
+    }
+    .form__input-txt--email {
+      background-image: url(../img/icon-mail.svg), linear-gradient(270deg, $c-grey 60px, #fff 60px);
+      background-repeat: no-repeat, no-repeat;
+      background-position: right 19px top 20px, 0 0;
     }
   }
 
@@ -506,7 +523,6 @@ fieldset {
 
 
   .form__wrapper--user {
-    //flex-basis: 50%;
     order: 5;
   }
 
