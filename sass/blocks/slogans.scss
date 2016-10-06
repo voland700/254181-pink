@@ -18,7 +18,6 @@
   background-origin: padding-box;
   background-size: cover;
   overflow: hidden;
-  //padding: 20px 55px 0 55px;
 }
 
 .slogans__title-fool {
@@ -54,8 +53,7 @@
   overflow: hidden;
   width: 157px;
   height: 280px;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
-  background-repeat: no-repeat;
+  background: url("../img/iphone-screen-mobile@1x.png")  100% 0% no-repeat;
   @media #{$retina} {
     background-image: url("../img/iphone-screen-mobile@2x.png");
     background-size: 157px;
@@ -105,9 +103,6 @@
 
   .slogans__title-txt {
     text-align: left;
-    /*&:last-child{
-      margin-bottom: 60px;
-    }*/
   }
 
   .slogans__title-img {
@@ -117,8 +112,9 @@
     width: 268px;
     height: 481px;
     background: url("../img/iphone-screen-3-tablet@1x.png")  100% 0% no-repeat;
+    background-size: 268px;
     @media #{$retina} {
-      background-image: url("/../img/iphone-screen-3-tablet@2x.png");
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-size: 268px;
     }
   }
@@ -184,6 +180,7 @@
       background-size: 180px auto;
       box-shadow: inset 0px -10px 15px -19px $c-b;
       background: transparent url(../img/iphone-screen-1-desktop@1x.png) center 0 no-repeat;
+      background-size: 292px;
       @media #{$retina} {
         background-image: url("./../img/iphone-screen-1-desktop@2x.png");
         background-size: 292px;
@@ -199,6 +196,7 @@
       background-size: 180px auto;
       box-shadow: inset 0px -10px 15px -19px $c-b;
       background: transparent url(../img/iphone-screen-2-desktop@1x.png) center 0 no-repeat;
+      background-size: 292px;
       @media #{$retina} {
         background-image: url("./../img/iphone-screen-2-desktop@2x.png");
         background-size: 292px;
@@ -214,6 +212,7 @@
       background-size: 180px auto;
       box-shadow: inset 0px -10px 15px -19px $c-b;
       background: transparent url(../img/iphone-screen-3-desktop@1x.png) center 0 no-repeat;
+      background-size: 292px;
        @media #{$retina} {
         background-image: url("./../img/iphone-screen-3-desktop@2x.png");
         background-size: 292px;
