@@ -1,0 +1,53 @@
+#logo-svg-footer-tablet,
+#logo-svg-footer-desktop,
+#logo-svg-mobile,
+#logo-svg-tablet,
+#logo-svg-desktop {
+  cursor: auto;
+  &:hover{
+   path {
+      fill: $c-accent;
+      transition: .3s;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+#logo-svg-tablet,
+#logo-svg-desktop {
+  display: none;
+}
+
+
+#logo-svg-footer-desktop {
+  display: none;
+}
+
+
+@media ($tablet-widths) {
+  #logo-svg-mobile,
+  #logo-svg-desktop {
+    display: none;
+  }
+  #logo-svg-tablet{
+    display: block;
+  }
+}
+
+@media ($desktop-widths) {
+  #logo-svg-mobile,
+  #logo-svg-tablet {
+    display: none;
+  }
+  #logo-svg-desktop {
+    display: block;
+  }
+  #logo-svg-footer-tablet {
+    display: none;
+  }
+  #logo-svg-footer-desktop {
+    display: block;
+}
+}

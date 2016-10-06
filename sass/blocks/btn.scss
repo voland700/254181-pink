@@ -8,6 +8,20 @@
   background-color: $c-btn;
   border-color: $c-btn;
   border-radius: 5px;
+  &:hover {
+    outline: none;
+    color: $c-w;
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    outline: none;
+    background-color: #1c9b5e;
+    color: rgba($c-w, 0.3);
+  }
+  &:visited {
+    outline: none;
+  }
 }
 
 .batton {

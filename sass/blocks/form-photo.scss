@@ -95,6 +95,7 @@ input[type="radio"] {
   width: 50px;
   height: 50px;
   margin: 0 15px 4px;
+  cursor: pointer;
   & svg {
     position: absolute;
     top: 0;
@@ -142,21 +143,45 @@ input[type="radio"] {
   left: 80%;
 }
 .scale-slider__point {
-  position: absolute;
-  top: -6px;
-  left: 75%;
-  width: 10px;
-  height: 10px;
-  background-color: $c-w;
-  border: 2px solid $c-accent;
-  border-radius: 50%;
+  &--crop {
+    position: absolute;
+    top: -6px;
+    left: 75%;
+    width: 10px;
+    height: 10px;
+    background-color: $c-w;
+    border: 2px solid $c-accent;
+    border-radius: 50%;
+  }
+  &--brightness {
+    position: absolute;
+    top: -6px;
+    left: 15%;
+    width: 10px;
+    height: 10px;
+    background-color: $c-w;
+    border: 2px solid $c-accent;
+    border-radius: 50%;
+  }
+  &--contrast {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: $c-w;
+    border: 2px solid $c-accent;
+    border-radius: 50%;
+  }
+  &:hover {
+    background-color: $c-accent;
+    }
   }
 
 .form__submit {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
- // padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   padding-top: 5px;
@@ -169,7 +194,14 @@ input[type="radio"] {
   width: 280px;
   margin-top: 5px;
   margin-bottom: 5px;
-
+  &:hover {
+    background-color: $c-accent;
+    color: $c-w;
+  }
+  &:active {
+    background-color: $c-accent;
+    color: rgba($c-w, 0.3);
+  }
 }
 
 .batton--reset {
@@ -179,6 +211,14 @@ input[type="radio"] {
   width: 280px;
   margin-top: 5px;
   margin-bottom: 5px;
+  &:hover {
+    opacity: 0.3;
+  }
+  &:active {
+    background-color: $c-bg;
+    color: rgba($c-w, 0.3);
+    opacity: 0.3;
+  }
 }
 
 
@@ -210,10 +250,6 @@ input[type="radio"] {
   .form__container--right {
     margin-left: 45px;
   }
-
-  .form-photo__label svg {
-    fill: $c-accent;
-    }
 
   .form-photo__section {
     display: flex;
