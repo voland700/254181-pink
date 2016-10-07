@@ -68,7 +68,7 @@
   }
 
   .slogans__offer-title {
-    @include font(35px, 35px); /*Шрифт на макете 40px!!!*/
+    @include font(40px, 40px); /*Шрифт на макете 40px!!!*/
     margin: 0 auto;
     &--small {
       width: 500px;
@@ -113,7 +113,6 @@
     width: 268px;
     height: 481px;
     background: url("../img/iphone-screen-3-tablet@1x.png")  50% 0% no-repeat;
-    //background-size: 268px;
     @media #{$retina} {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-size: 268px;
@@ -123,7 +122,6 @@
 
 
 @media #{$desktop-widths} {
-
   .slogans__title {
     display: block;
     width: 100%;
@@ -142,6 +140,7 @@
     width: 750px;
     margin: 80px auto;
   }
+
   .slogans__offer-title {
     @include font(50px, 50px);
   }
