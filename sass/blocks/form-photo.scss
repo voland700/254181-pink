@@ -222,7 +222,7 @@ input[type="radio"] {
 }
 
 
-@media ($tablet-widths) {
+@media #{$tablet-widths} {
   .form-photo {
     padding-top: 60px;
     padding-bottom: 55px;
@@ -313,7 +313,7 @@ input[type="radio"] {
   }
 }
 
-@media ($desktop-widths) {
+@media #{$desktop-widths} {
  .form-photo {
     width: 940px;
     margin: 0 auto;

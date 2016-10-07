@@ -79,7 +79,7 @@
  }
 
 
-@media ($tablet-widths) {
+@media #{$tablet-widths} {
   .main-footer{
     padding-top: 0;
     height:  128px;
@@ -167,7 +167,7 @@
   }
 }
 
-@media ($desktop-widths) {
+@media #{$desktop-widths} {
   .main-footer__map {
     height: 505px;
   }

@@ -1,3 +1,4 @@
+/* Спрайты SVG */
 #logo-svg-footer-tablet,
 #logo-svg-footer-desktop,
 #logo-svg-mobile,
@@ -26,7 +27,7 @@
 }
 
 
-@media ($tablet-widths) {
+@media #{$tablet-widths} {
   #logo-svg-mobile,
   #logo-svg-desktop {
     display: none;
@@ -36,7 +37,7 @@
   }
 }
 
-@media ($desktop-widths) {
+@media #{$desktop-widths} {
   #logo-svg-mobile,
   #logo-svg-tablet {
     display: none;
@@ -49,5 +50,5 @@
   }
   #logo-svg-footer-desktop {
     display: block;
-}
+ }
 }

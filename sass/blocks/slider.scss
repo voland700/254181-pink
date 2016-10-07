@@ -52,7 +52,7 @@
 
 
 
-@media ($tablet-widths) {
+@media #{$tablet-widths} {
   .slider {
   width: 100%;
 }
@@ -85,7 +85,7 @@
   }
 }
 
-@media ($desktop-widths) {
+@media #{$desktop-widths} {
   .slider--bg-w {
     background: url(../img/icon-quotes.svg) no-repeat 50% 72px;
   }

@@ -3,7 +3,7 @@
   }
 
 
-@media ($tablet-widths) {
+@media #{$tablet-widths} {
   .trick {
     display: block;
     width: 100%;
@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     width: 620px;
-    height: 400px;
+    min-height: 400px;
     margin: 0 auto;
   }
 
@@ -64,7 +64,7 @@
   }
 }
 
-@media ($desktop-widths) {
+@media #{$desktop-widths} {
   .trick {
     background-color: $c-grey;
   }
@@ -73,7 +73,7 @@
     display: flex;
     align-items: center;
     width: 940px;
-    height: 420px;
+    min-height: 420px;
     margin: 0 auto;
   }
 
@@ -98,14 +98,4 @@
     margin-top: 10px;
     @include font(30px, 30px);
   }
-
-
-
-
-
-
-
-
-
-
 }

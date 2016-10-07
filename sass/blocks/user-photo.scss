@@ -163,7 +163,7 @@
   }
 }
 
-@media ($tablet-widths) {
+@media #{$tablet-widths} {
   .photo__wrap-panorama-user {
     width: 620px;
   }
@@ -195,7 +195,7 @@
     align-content: space-between;
     flex-grow: 1;
     margin-bottom: 0;
-    height: 150px;
+    min-height: 150px;
   }
   .user-photo__txt {
     margin-bottom: auto;
@@ -214,7 +214,7 @@
 
 }
 
-@media ($desktop-widths) {
+@media #{$desktop-widths} {
   .photo-slogan__txt {
     width: 500px;
     margin: 50px auto;

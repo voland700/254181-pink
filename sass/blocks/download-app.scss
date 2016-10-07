@@ -84,7 +84,7 @@
   background: url("../img/logo-microsoft.svg") 50% 50% no-repeat;
  }
 
-@media ($tablet-widths) {
+@media #{$tablet-widths} {
   .download {
     width: 100%;
     height: 730px;
@@ -135,7 +135,7 @@
 }
 
 
-@media ($desktop-widths) {
+@media #{$desktop-widths} {
 
 .download {
   width: 100%;
