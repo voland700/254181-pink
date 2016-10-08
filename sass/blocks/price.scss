@@ -122,11 +122,21 @@ li:nth-child(4).price__list-item .price__marker {
 @include toggle(prices-input-2);
 @include toggle(prices-input-3);
 
-@media ($tablet-widths) {
+@media #{$tablet-widths} {
   .price {
     width: 620px;
     margin: 0 auto;
     }
+  .price__wrap {
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+
+
+  .prices__toggles {
+    display: none;
+  }
+
   .price__title-item {
     width: 155px;
     height: 80px;
@@ -172,11 +182,17 @@ li:nth-child(4).price__list-item .price__marker {
 
 }
 
-@media ($desktop-widths) {
+@media #{$desktop-widths} {
+  .price__wrap {
+    padding-top: 150px;
+    padding-bottom: 90px;
+  }
+
   .price {
     width: 940px;
     margin: 0 auto;
-    }
+  }
+
   .price__title-item {
     width: 235px;
     height: 100px;
@@ -189,7 +205,5 @@ li:nth-child(4).price__list-item .price__marker {
   .price__list-item {
     @include font(18px, 30px);
   }
-
-
 
 }

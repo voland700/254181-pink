@@ -70,8 +70,13 @@
   color: white;
   background-color: $c-bg;
   box-shadow:
-    inset 0px -1px 0px 0px $c-b,
-    inset 0px 1px 0px 0px rgba($c-w, 0.15);
+  inset 0px -1px 0px 0px $c-b,
+  inset 0px 1px 0px 0px rgba($c-w, 0.15);
+}
+
+.main-nav__item--active a {
+  box-shadow: inset 0 1px 1px 0px #1d2630;
+    border-top-color: #1d2630;
 }
 
 .main-nav__item:first-child {
@@ -93,9 +98,9 @@
 }
 
 
-@media ($tablet-widths) {
+@media #{$tablet-widths} {
   .main-nav__toggle {
-    top: -66px;
+    top: -50px;
     right: 40px;
   }
 
@@ -130,7 +135,7 @@
     background-color: transparent;
     box-shadow: none;
     @include font(18px, 18px);
-    font-weight: bold;
+    font-weight: 400;
     &:hover {
       border-bottom: 2px solid $c-w;
       border-color: $c-accent;
@@ -149,7 +154,7 @@
   }
 }
 
-@media ($desktop-widths) {
+@media #{$desktop-widths} {
   .main-nav__item:not(:last-child) {
     margin-right: 80px;
   }

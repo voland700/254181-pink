@@ -36,5 +36,9 @@
   &:focus {
     outline: none;
   }
+  &--disabled {
+    background-color: $c-border;
+    color: white;
+  }
 }
 
