@@ -111,7 +111,7 @@
     height: auto;
   }
 
-.user-photo-wrap {
+.user-photo__wrap {
   width: auto;
   padding: 5px 20px 20px 20px;
   margin-bottom: 20px;
@@ -188,7 +188,7 @@
     width: 300px;
     margin-bottom: 20px;
   }
-  .user-photo-wrap {
+  .user-photo__wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -196,6 +196,7 @@
     flex-grow: 1;
     margin-bottom: 0;
     min-height: 150px;
+    _height: 150px; /* хак для IE */
   }
   .user-photo__txt {
     margin-bottom: auto;
