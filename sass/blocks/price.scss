@@ -1,3 +1,9 @@
+.price {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
 .price__wrap {
   width: 100%;
   background-color: $c-grey;
@@ -9,14 +15,6 @@
   padding-top: 65px;
 
 }
-
-.price {
-  display: table;
-  width: 100%;
-
-  border-collapse: collapse;
-}
-
 .price__title,
 .price__list {
   display: table-row;

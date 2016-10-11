@@ -1,16 +1,10 @@
-input[type="checkbox"],
-input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
-}
-
 .form-photo {
   margin-top: 0;
   padding-top: 20px;
   background-color: $c-grey;
 }
 
-.form__item {
+.form-photo__item {
     display: block;
 }
 
@@ -42,7 +36,7 @@ input[type="radio"] {
 
 }
 
-.form__input {
+.form-photo__input {
   position: relative;
   display: block;
   width: 100%;
@@ -57,11 +51,11 @@ input[type="radio"] {
     width: 100%;
 }
 
-.form__item {
+.form-photo__item {
     display: block;
 }
 
-.input-list {
+.form-photo__input-list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -75,7 +69,7 @@ input[type="radio"] {
 }
 
 
-.input-list__item {
+.form-photo__input-list-item {
   &--line {
     display: inline-block;
     vertical-align: top;
@@ -112,7 +106,7 @@ input[type="radio"] {
   &:checked ~ label svg {
     fill: $c-accent;
   }
-  &:checked ~ .scale-slider {
+  &:checked ~ .form-photo__scale-slider {
     display: block;
     float: none;
   }
@@ -123,7 +117,7 @@ input[type="radio"] {
 }
 
 
-.scale-slider {
+.form-photo__scale-slider {
   position: absolute;
   left: 0;
   right: 0;
@@ -134,15 +128,16 @@ input[type="radio"] {
   height: 20px;
 }
 
-.scale-slider__line {
+.form-photo__scale-slider-line {
   height: 2px;
   background-color: #283645;
 }
 
-.scale-slider--crop .scale-slider__point {
+.form-photo__scale-slider--crop
+.form-photo__scale-slider-point {
   left: 80%;
 }
-.scale-slider__point {
+.form-photo__scale-slider-point {
   &--crop {
     position: absolute;
     top: -6px;
@@ -178,47 +173,13 @@ input[type="radio"] {
     }
   }
 
-.form__submit {
+.form-photo__submit {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   text-align: center;
-  padding-top: 5px;
-}
-
-.batton--post {
-  background-color: transparent;
-  color: $c-accent;
-  border: 3px solid $c-accent;
-  width: 280px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  &:hover {
-    background-color: $c-accent;
-    color: $c-w;
-  }
-  &:active {
-    background-color: $c-accent;
-    color: rgba($c-w, 0.3);
-  }
-}
-
-.batton--reset {
-  background-color: transparent;
-  color: rgba($c-bg, .3);
-  border: 3px solid rgba($c-bg, .3);
-  width: 280px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  &:hover {
-    opacity: 0.3;
-  }
-  &:active {
-    background-color: $c-bg;
-    color: rgba($c-w, 0.3);
-    opacity: 0.3;
-  }
 }
 
 
@@ -239,7 +200,7 @@ input[type="radio"] {
     height: auto;
   }
 
-  .form__container {
+  .form-photo__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -247,7 +208,7 @@ input[type="radio"] {
     height: auto;
   }
 
-  .form__container--right {
+  .form-photo__container--right {
     margin-left: 45px;
   }
 
@@ -257,7 +218,7 @@ input[type="radio"] {
 
   }
 
-  .input-list {
+  .form-photo__input-list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -267,16 +228,16 @@ input[type="radio"] {
     }
   }
 
-  .scale-slider {
+  .form-photo__scale-slider {
     display: block;
     position: relative;
     bottom: 0;
     margin: 0 auto;
-    width: 240px;
+    width: 200px;
     height: auto;
   }
 
-  .input-list__item {
+  .form-photo__input-list-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -292,24 +253,12 @@ input[type="radio"] {
     margin: 15px 20px 15px 0;
   }
 
-  .form__submit {
+  .form-photo__submit {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 0;
     text-align: center;
-  }
-
-  .batton--post {
-    width: 260px;
-    margin-top: 0;
-    margin-bottom: 0;
-   }
-
-  .batton--reset {
-    width: 260px;
-    margin-top: 20px;
-    margin-bottom: 0;
   }
 }
 
@@ -323,31 +272,25 @@ input[type="radio"] {
     width: 100%;
   }
 
-  .form__container {
+  .form-photo__container {
     width: 410px;
   &--left {
-    margin-left: 80px;
+    margin-left: 40px;
     }
   &--right {
     margin-right: 60px;
     }
   }
 
-  .form__submit {
+  .form-photo__scale-slider {
+    width: 295px;
+  }
+
+  .form-photo__submit {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
     text-align: center;
-  }
-
-  .batton--post {
-    width: 180px;
-    margin: 0;
-   }
-
-  .batton--reset {
-    width: 180px;
-    margin: 0;
   }
 }
