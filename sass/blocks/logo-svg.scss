@@ -1,9 +1,8 @@
-/* Спрайты SVG */
-#logo-svg-footer-tablet,
-#logo-svg-footer-desktop,
-#logo-svg-mobile,
-#logo-svg-tablet,
-#logo-svg-desktop {
+.logo-svg-footer-tablet,
+.logo-svg-footer-desktop,
+.logo-svg-mobile,
+.logo-svg-tablet,
+.logo-svg-desktop {
   cursor: auto;
   &:hover{
    path {
@@ -16,39 +15,39 @@
   }
 }
 
-#logo-svg-tablet,
-#logo-svg-desktop {
+.logo-svg-tablet,
+.logo-svg-desktop {
   display: none;
 }
 
 
-#logo-svg-footer-desktop {
+.logo-svg-footer-desktop {
   display: none;
 }
 
 
 @media #{$tablet-widths} {
-  #logo-svg-mobile,
-  #logo-svg-desktop {
+  .logo-svg-mobile,
+  .logo-svg-desktop {
     display: none;
   }
-  #logo-svg-tablet{
+  .logo-svg-tablet{
     display: block;
   }
 }
 
 @media #{$desktop-widths} {
-  #logo-svg-mobile,
-  #logo-svg-tablet {
+  .logo-svg-mobile,
+  .logo-svg-tablet {
     display: none;
   }
-  #logo-svg-desktop {
+  .logo-svg-desktop {
     display: block;
   }
-  #logo-svg-footer-tablet {
+  .logo-svg-footer-tablet {
     display: none;
   }
-  #logo-svg-footer-desktop {
+  .logo-svg-footer-desktop {
     display: block;
  }
 }

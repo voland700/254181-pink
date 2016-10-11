@@ -1,5 +1,9 @@
 .pop-up {
-  margin: 0 auto 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: $c-w;
   box-shadow: 0 7px 25px rgba($c-b, 0.25);
   display: flex;
   flex-direction: column;
@@ -7,10 +11,11 @@
   justify-content: space-between;
 }
 
-
 .pop-up--victory,
 .pop-up--error {
   width: 320px;
+  z-index: 10;
+  display: none;
 }
 
 .pop-up__title {
@@ -61,7 +66,7 @@
   }
 
   .pop-up__txt {
-    @include font(13px, 24px);
+    @include font(18px, 24px);
   }
 
   .pop-up__txt--victory,
