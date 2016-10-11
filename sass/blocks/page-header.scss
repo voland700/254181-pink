@@ -22,7 +22,7 @@
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .page-header {
     margin-bottom: -110px;
   }
@@ -35,18 +35,20 @@
 @media (min-width: 900px) {
   .page-header {
     padding-top: 0;
+    height: 110px;
   }
 
   .page-header__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
-    min-height: 110px;
+    //padding: 0 30px;
+    padding-top: 20px;
+    //height: 110px;
   }
 
   .page-header__logo {
-    margin: 0;
+    margin-top: 30px;
   }
 }
 

@@ -1,0 +1,18 @@
+.photo-slogan {
+  width: 100%;
+}
+
+.photo-slogan__txt {
+  width: 245px;
+  margin: 50px auto;
+  @include font(14px, 30px);
+  text-align: center;
+}
+
+@media #{$desktop-widths} {
+  .photo-slogan__txt {
+    width: 500px;
+    margin: 50px auto;
+    @include font(18px, 30px);
+  }
+}

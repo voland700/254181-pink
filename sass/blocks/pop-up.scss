@@ -9,7 +9,7 @@
 
 
 .pop-up--victory,
-.pop-up--oblom {
+.pop-up--error {
   width: 320px;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .pop-up__txt--victory,
-.pop-up__txt--oblom {
+.pop-up__txt--error {
   width: 280px;
 }
 
@@ -40,7 +40,7 @@
   background-color: $c-grey;
 }
 .btn_pop-up--victory,
-.btn_pop-up--oblom {
+.btn_pop-up--error {
   width: 280px;
   margin: 40px auto 50px auto;
 }
@@ -48,7 +48,7 @@
 @media #{$tablet-widths} {
 
   .pop-up--victory,
-  .pop-up--oblom {
+  .pop-up--error {
     width: 460px;
   }
 
@@ -56,7 +56,7 @@
     @include font(30px, 40px);
   }
   .pop-up__title--victory,
-  .pop-up__title--oblom {
+  .pop-up__title--error {
     width: 220px;
   }
 
@@ -65,12 +65,12 @@
   }
 
   .pop-up__txt--victory,
-  .pop-up__txt--oblom {
+  .pop-up__txt--error {
     width: 320px;
   }
 
   .btn_pop-up--victory,
-  .btn_pop-up--oblom {
+  .btn_pop-up--error {
     width: 300px;
     margin: 50px auto 50px auto;
   }

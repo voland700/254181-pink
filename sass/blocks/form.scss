@@ -43,11 +43,6 @@ fieldset {
     padding-left: 20px;
     border: 2px solid $c-border;
     border-radius: 2px;
-    &::-moz-placeholder{
-      @include font(18px, 30px);
-      text-transform: uppercase;
-      color: $c-bg;
-    }
   }
 
   input[type="checkbox"] {
@@ -255,9 +250,11 @@ fieldset {
   &-red {
     color: $c-accent;
   }
-
 }
 
+.form__mandatory-hidden {
+  display: none;
+}
 
 @media #{$tablet-widths} {
   .form {
@@ -320,7 +317,7 @@ fieldset {
     white-space: nowrap;
     background-color: $c-w;
     width: auto;
-}
+  }
 
   .form__wrapper-app-grey  {
     background-color: $c-w;
@@ -367,6 +364,7 @@ fieldset {
 
   .form__label-txt {
     margin-left: 60px;
+    display: inline-block;
   }
 
   .form__legend--contact {
@@ -536,8 +534,6 @@ fieldset {
     margin-bottom: 45px;
   }
 
-
-
   .form__wrapper--user {
     order: 5;
   }
@@ -560,8 +556,7 @@ fieldset {
   }
 
   .form__group--advance {
-    flex-basis: 260px;
-
+    flex-basis: 263px;
   }
 
   .form label.form__label--checkbox {
@@ -582,10 +577,19 @@ fieldset {
     flex-basis: 100%;
     padding: 40px 60px 50px 60px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
+
   textarea.form__textarea {
     width: 100%;
+  }
+
+  .form__wrapper-btn {
+    width: 940px;
+  }
+
+  .form__mandatory-hidden {
+    display: inline;
   }
 
 }

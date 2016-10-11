@@ -10,30 +10,29 @@
   }
 
   .trick__wrap {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 620px;
     min-height: 400px;
     margin: 0 auto;
-  }
-
-  .trick__time {
-    display: block;
-    position: relative;
-    width: 247px;
-    height: 285px;
-    background: transparent url("../img/icon-timer.svg") 0 center no-repeat;
-    background-size: 247px;
-    span {
-      display: block;
+    &::before {
+      content: "24";
       position: absolute;
-      top: 110px;
-      left: 70px;
-
-      @include font(96px, 96px);
+      top: 60px;
+      left: 3.0303%;
+      display: block;
+      width: 238px;
+      height: 277px;
+      font-size: 96px;
+      line-height: 300px;
+      font-weight: 700;
+      text-align: center;
+      vertical-align: bottom;
       color: $c-accent;
-      font-weight: bold;
+      background: url("../img/icon-timer.svg") no-repeat 0 0;
+      background-size: 237px;
     }
   }
 

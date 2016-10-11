@@ -97,7 +97,7 @@
       </div>
     </header>
     <section class="picture">
-      <div class="picture__wrap">
+      <div class="picture__wrap picture__wrap--photo">
         <h2 class="picture__title">Фотографии пользователей</h2>
       </div>
     </section>
@@ -106,12 +106,12 @@
         <p class="photo-slogan__txt">Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?</p>
       </div>
-      <div class="photo__panorama">
-        <div class="photos__img-panorama" data-title="Панорама дня">
+      <div class="photo">
+        <div class="photo__img-panorama" data-title="Панорама дня">
           <picture>
                 <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="photos__img" src="img/panorama-mobile@1x.jpg" alt="Панорама дня" srcset="img/panorama-mobile@2x.jpg 2x">
+                <img class="photo__img" src="img/panorama-mobile@1x.jpg" alt="Панорама дня" srcset="img/panorama-mobile@2x.jpg 2x">
           </picture>
         </div>
         <div class="photo__wrap-panorama-user">
@@ -313,11 +313,11 @@
     <section class="form-photo">
         <div class="form-photo__inner">
           <form action="http://example.org/" method="post" name="form-photo">
-            <div class="form-photo__section  form__section--full">
-              <div class="form__container  form__container--left  form-photo__photo-container">
-                <div class="form__item">
+            <div class="form-photo__section  form-photo__section--full">
+              <div class="form-photo__container  form-photo__container--left  form-photo__photo-container">
+                <div class="form-photo__item">
                   <label for="newPhoto" class="form-photo__load-file">
-                    <input class="form__input" type="file" name="new_photo" id="newPhoto">
+                    <input class="form-photo__input" type="file" name="new_photo" id="newPhoto">
                       <picture>
                         <source
                           media="(min-width: 960px)"
@@ -332,10 +332,10 @@
                   </label>
                 </div>
               </div>
-              <div class="form__container  form__container--right  form-photo__correct-container">
-                <div class="form__item">
-                  <ul class="input-list  input-list--line  input-list--correct">
-                    <li class="input-list__item  input-list__item--line  input-list__item--underline">
+              <div class="form-photo__container  form-photo__container--right  form-photo__correct-container">
+                <div class="form-photo__item">
+                  <ul class="form-photo__input-list  form-photo__input-list--line  form-photo__input-list--correct">
+                    <li class="form-photo__input-list-item  form-photo__input-list-item--line  form-photo__input-list-item--underline">
                       <input class="form-photo__input  form-photo__input--radio" type="radio" name="correct" value="crop" id="crop" checked>
                       <label class="form-photo__label form-photo__label--size" for="crop">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="48" height="48" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
@@ -344,13 +344,13 @@
                         </svg>
                       </label>
                       <input class="form-photo__input  form-photo__input--range" type="range" name="correct_crop" min="0" max="100" step="1" value="50">
-                      <div class="scale-slider  scale-slider--crop">
-                        <div class="scale-slider__line">
-                          <span class="scale-slider__point scale-slider__point--crop"></span>
+                      <div class="form-photo__scale-slider  form-photo__scale-slider--crop">
+                        <div class="form-photo__scale-slider-line">
+                          <span class="form-photo__scale-slider-point form-photo__scale-slider-point--crop"></span>
                         </div>
                       </div>
                     </li>
-                    <li class="input-list__item  input-list__item--line  input-list__item--underline">
+                    <li class="form-photo__input-list-item  form-photo__input-list-item--line  form-photo__input-list-item--underline">
                       <input class="form-photo__input--radio" type="radio" name="correct" value="fill" id="brightness">
                       <label class="form-photo__label form-photo__label--saturation" for="brightness">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="48" height="48" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
@@ -360,13 +360,13 @@
                         </svg>
                       </label>
                       <input class="form-photo__input  form-photo__input--range" type="range" name="correct_brightness" min="0" max="100" step="1" value="50">
-                      <div class="scale-slider  scale-slider--brightness">
-                        <div class="scale-slider__line">
-                          <span class="scale-slider__point scale-slider__point--brightness"></span>
+                      <div class="form-photo__scale-slider  form-photo__scale-slider--brightness">
+                        <div class="form-photo__scale-slider-line">
+                          <span class="form-photo__scale-slider-point form-photo__scale-slider-point--brightness"></span>
                         </div>
                       </div>
                     </li>
-                    <li class="input-list__item  input-list__item--line  input-list__item--underline">
+                    <li class="form-photo__input-list-item  form-photo__input-list-item--line  form-photo__input-list-item--underline">
                       <input class="form-photo__input--radio" type="radio" name="correct" value="contrast" id="contrast">
                       <label class="form-photo__label form-photo__label--balance" for="contrast">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="31.92" height="31.92" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
@@ -375,15 +375,15 @@
                         </svg>
                       </label>
                       <input class="form-photo__input  form-photo__input--range" type="range" name="correct_contrast" min="0" max="100" step="1" value="3">
-                      <div class="scale-slider  scale-slider--contrast">
-                        <div class="scale-slider__line">
-                          <span class="scale-slider__point scale-slider__point--contrast"></span>
+                      <div class="form-photo__scale-slider  form-photo__scale-slider--contrast">
+                        <div class="form-photo__scale-slider-line">
+                          <span class="form-photo__scale-slider-point form-photo__scale-slider-point--contrast"></span>
                         </div>
                       </div>
                     </li>
                   </ul>
                 </div>
-                <div class="form__submit  form__submit--photo">
+                <div class="form-photo__submit  form-photo__submit--photo">
                   <button class="batton batton--post" type="submit">Запостить</button>
                   <button class="batton batton--reset" type="reset">Отмена</button>
                 </div>

@@ -18,6 +18,18 @@
   background-origin: padding-box;
   background-size: cover;
   overflow: hidden;
+  padding-bottom: 320px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: block;
+    width: 157px;
+    height: 282px;
+    background: url(../img/iphone-screen-mobile@1x.png) no-repeat 50% 4px;
+  }
 }
 
 .slogans__title-fool {
@@ -46,20 +58,6 @@
   font-weight: normal;
   color: $c-bg;
 }
-@media (max-width: 699px) {
-.slogans__title-img {
-  display: block;
-  margin: 40px auto 0 auto;
-  overflow: hidden;
-  width: 157px;
-  height: 280px;
-  background: url("../img/iphone-screen-mobile@1x.png")  50% 0% no-repeat;
-  @media #{$retina} {
-    background-image: url("../img/iphone-screen-mobile@2x.png");
-    background-size: 157px;
-  }
-}
-}
 
 @media #{$tablet-widths} {
   .slogans__offer {
@@ -68,7 +66,7 @@
   }
 
   .slogans__offer-title {
-    @include font(40px, 40px); /*Шрифт на макете 40px!!!*/
+    @include font(40px, 40px);
     margin: 0 auto;
     &--small {
       width: 500px;
@@ -77,26 +75,47 @@
 
   .slogans__title {
     padding: 20px 0 0 0;
+    &::after {
+      content: "";
+      display: none;
+    }
   }
 
+
   .slogans__title-fool {
+    position: relative;
     width: 620px;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 268px;
+      height: 481px;
+      background: url("../img/iphone-screen-3-tablet@1x.png")  0% 0% no-repeat;
+      @media #{$retina} {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+        background-size: 268px;
+      }
+    }
   }
 
   .slogans__title-wrap {
-   padding-left: 10px;
-   padding-top: 50px;
-   order: 1;
-   width: 50%;
+    padding-left: 10px;
+    padding-top: 50px;
+    order: 1;
+    width: 50%;
   }
+
   .slogans__wrap-item {
     margin-bottom: 25px;
   }
+
   .slogans__title-item {
   text-align: left;
   margin-top: 20px;
@@ -105,21 +124,7 @@
   .slogans__title-txt {
     text-align: left;
   }
-
-  .slogans__title-img {
-    align-self: flex-end;
-    @include size(268px, 481px);
-    margin: 0 auto 0 0;
-    width: 268px;
-    height: 481px;
-    background: url("../img/iphone-screen-3-tablet@1x.png")  50% 0% no-repeat;
-    @media #{$retina} {
-      background-image: url("../img/iphone-screen-3-tablet@2x.png");
-      background-size: 268px;
-    }
-  }
 }
-
 
 @media #{$desktop-widths} {
   .slogans__title {
@@ -130,10 +135,10 @@
   .slogans__title-fool {
     width: 940px;
     justify-content: space-between;
-  }
-
-  .slogans__title-img {
-    display: none;
+     &::after {
+      content: "";
+      display: none;
+    }
   }
 
   .slogans__offer {
@@ -160,8 +165,8 @@
     width: 230px;
     margin: 50px auto 30px auto;
     text-align: center;
-
   }
+
   .slogans__title-txt {
     @include font(18px, 30px);
     width: 235px;
@@ -186,7 +191,6 @@
         background-size: 292px;
       }
     }
-
     &--peace::before {
       content: "";
       display: block;
@@ -202,7 +206,6 @@
         background-size: 292px;
       }
     }
-
     &--friends::before {
       content: "";
       display: block;
