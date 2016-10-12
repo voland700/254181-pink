@@ -32,26 +32,11 @@
 }
 
 @mixin container() {
-  // width: 320px;
   margin: 0 auto;
-
   @media ($tablet-widths) {
       width: 620px;
   }
-
   @media ($desktop-widths) {
       width: 940px;
-  }
-}
-
-@mixin placeholder-color($color: $c-accent) {
-  &::-webkit-input-placeholder {
-    color: $color;
-  }
-  &::-moz-placeholder {
-    color: $color;
-  }
-  &:-ms-input-placeholder {
-    color: $color;
   }
 }

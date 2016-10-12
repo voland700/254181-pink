@@ -1,7 +1,7 @@
 .form {
-  input,
-  textarea {
-    @include  placeholder-color($c-b);
+  input[placeholder],
+  textarea[placeholder] {
+    color: $c-b ;
     font-size: 18px;
     &:hover {
       border-color: $c-bg;
