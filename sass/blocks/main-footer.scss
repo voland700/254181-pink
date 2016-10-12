@@ -59,23 +59,22 @@
   .main-footer__social-yt {
     background: url("../img/icon-youtube.svg") 50% 50% no-repeat;
   }
+}
 
-  .main-footer__copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 130px;
-    height: 35px;
-    p {
-      @include font(14px, 18px);
-    }
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  height: 35px;
+  p {
+    @include font(14px, 18px);
   }
-  .main-footer__academy {
-    width: 27px;
-    height: 34px;
-  }
- }
-
+}
+.main-footer__academy {
+  width: 27px;
+  height: 34px;
+}
 
 @media #{$tablet-widths} {
   .main-footer{

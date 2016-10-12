@@ -14,7 +14,7 @@
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .page-header--open-nav,
   .page-header--nojs {
     background-color: $c-bg;
@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 900px) {
   .page-header {
     padding-top: 0;
     height: 110px;

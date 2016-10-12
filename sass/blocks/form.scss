@@ -1,4 +1,13 @@
 .form {
+  input {
+  height: 58px;
+  padding-left: 20px;
+  border: 2px solid $c-border;
+  border-radius: 2px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
   input[placeholder],
   textarea[placeholder] {
     color: $c-b ;
@@ -35,19 +44,6 @@ fieldset {
 }
 .form-title-hiden {
   display: none;
-}
-
-.form {
-  input {
-    height: 58px;
-    padding-left: 20px;
-    border: 2px solid $c-border;
-    border-radius: 2px;
-  }
-
-  input[type="checkbox"] {
-    display: none;
-  }
 }
 
 .form__wrapper {
@@ -302,7 +298,6 @@ fieldset {
     margin-top: 15px;
     margin-bottom: 25px;
 
-
     label {
       padding-left: 0;
       margin-right: 20px;
@@ -356,7 +351,7 @@ fieldset {
         margin-right: 40px;
       }
       &:checked + span::before {
-        background: $c-w url(../img/icon-yes.svg) center center no-repeat;
+        background: $c-w url("../img/icon-yes.svg") center center no-repeat;
       }
 
     }
@@ -397,12 +392,12 @@ fieldset {
       margin: 0 auto 5px auto;
     }
     .form__input-txt--phone {
-      background-image: url(../img/icon-phone.svg), linear-gradient(270deg, $c-grey 60px, #fff 60px);
+      background-image: url("../img/icon-phone.svg"), linear-gradient(270deg, $c-grey 60px, #fff 60px);
       background-repeat: no-repeat, no-repeat;
       background-position: right 19px top 20px, 0 0;
     }
     .form__input-txt--email {
-      background-image: url(../img/icon-mail.svg), linear-gradient(270deg, $c-grey 60px, #fff 60px);
+      background-image: url("../img/icon-mail.svg"), linear-gradient(270deg, $c-grey 60px, #fff 60px);
       background-repeat: no-repeat, no-repeat;
       background-position: right 19px top 20px, 0 0;
     }
@@ -511,7 +506,6 @@ fieldset {
       flex-grow: 0;
     }
   }
-
 
   .form__wrapper-app-grey {
     flex-basis: 434px;

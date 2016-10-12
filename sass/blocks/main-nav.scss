@@ -24,16 +24,19 @@
 
 .main-nav--opened .main-nav__toggle {
   @include size(24px);
-  .menuCross {
-    display: block;
-  }
-  .menuBurger {
-    display: none;
-  }
 }
 
-  .menuCross,
-  .menuBurger {
+.main-nav--opened
+.menuCross {
+  display: block;
+}
+.menuBurger {
+  display: none;
+}
+
+
+.menuCross,
+.menuBurger {
   &:hover{
    path {
       fill: $c-accent;
