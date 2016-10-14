@@ -46,12 +46,6 @@
   display: none;
 }
 
-@include toggle(reviews-input-1);
-@include toggle(reviews-input-2);
-@include toggle(reviews-input-3);
-
-
-
 @media #{$tablet-widths} {
   .slider {
   width: 100%;
@@ -128,5 +122,4 @@
   .slider__toggles {
     display: none;
   }
-
 }

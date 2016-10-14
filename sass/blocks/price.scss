@@ -116,9 +116,6 @@ li:nth-child(4).price__list-item .price__marker {
   }
 }
 
-@include toggle(prices-input-1);
-@include toggle(prices-input-2);
-@include toggle(prices-input-3);
 
 @media #{$tablet-widths} {
   .price {

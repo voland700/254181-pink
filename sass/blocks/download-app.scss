@@ -111,10 +111,6 @@
     }
   }
 
-  .download-app-hand {
-    display: none;
-  }
-
   .download-app__list {
   order: 1;
   width: 50%;
@@ -136,7 +132,6 @@
   .download-app__txt{
     width: 300px;
     text-align: center;
-
   }
 }
 
@@ -168,5 +163,4 @@
 .download-app__txt{
   @include font(18px, 24px);
   }
-
 }

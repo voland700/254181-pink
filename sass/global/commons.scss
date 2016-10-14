@@ -23,3 +23,18 @@ input[type="radio"] {
     box-sizing: border-box;
     padding: 0;
 }
+
+fieldset {
+  position: relative;
+  border: none;
+  padding: 0;
+}
+
+@include toggle(prices-input-1);
+@include toggle(prices-input-2);
+@include toggle(prices-input-3);
+
+@include toggle(reviews-input-1);
+@include toggle(reviews-input-2);
+@include toggle(reviews-input-3);
+
